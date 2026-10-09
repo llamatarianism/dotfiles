@@ -1176,3 +1176,165 @@ AttributeError: 'NoneType' object has no attribute 'region'
 2026-10-06 19:19:21 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
 2026-10-06 19:21:47 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
 2026-10-06 19:21:56 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 19:24:36 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 19:28:05 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 19:30:16 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 19:31:46 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 19:32:46 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 20:10:39 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 20:41:08 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 20:41:12 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 20:44:14 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 20:45:14 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 20:45:18 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 20:45:22 [ERROR] [MPVEventHandlerThread] ytm_player.services.player: mpv[ffmpeg]: tls: Error decoding the received TLS packet.
+2026-10-06 20:48:41 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 20:48:46 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 20:51:53 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 20:55:43 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 20:55:48 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 20:58:45 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:01:04 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:03:04 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:05:31 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:08:38 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:09:30 [ERROR] [MainThread] ytm_player.services.ytmusic: get_album failed for 'UCHXBa0__dJZ9LbjOlp4udtA'
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/site-packages/ytm_player/services/ytmusic.py", line 518, in get_album
+    return await self._call(self.client.get_album, album_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/site-packages/ytm_player/services/ytmusic.py", line 260, in _call
+    return await self._run(func, *args, timeout=timeout, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/site-packages/ytm_player/services/ytmusic.py", line 342, in _run
+    result = await asyncio.wait_for(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/usr/lib/python3.14/asyncio/tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/threads.py", line 26, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/usr/lib/python3.14/site-packages/ytmusicapi/mixins/browsing.py", line 594, in get_album
+    raise YTMusicUserError("Invalid album browseId provided, must start with MPRE.")
+ytmusicapi.exceptions.YTMusicUserError: Invalid album browseId provided, must start with MPRE.
+2026-10-06 21:09:38 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:09:43 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:11:28 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:12:09 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:12:30 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:13:25 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:14:53 [WARNING] [asyncio_5] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:16:15 [WARNING] [asyncio_4] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:18:11 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:19:51 [WARNING] [asyncio_5] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:22:08 [WARNING] [asyncio_3] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:23:26 [WARNING] [asyncio_4] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:23:31 [WARNING] [asyncio_3] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:23:38 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:23:43 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:25:33 [WARNING] [asyncio_3] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:28:52 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:30:47 [WARNING] [asyncio_3] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:33:33 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:35:53 [WARNING] [asyncio_3] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:40:33 [WARNING] [asyncio_4] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:42:34 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:44:48 [WARNING] [asyncio_3] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:46:00 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:49:33 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:50:04 [WARNING] [asyncio_4] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:50:09 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:54:12 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:57:49 [WARNING] [asyncio_4] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-06 21:57:53 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 18:14:56 [WARNING] [asyncio_3] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 18:15:01 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 18:17:00 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 18:19:49 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 18:22:34 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:13:36 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:13:40 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:13:47 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:13:50 [ERROR] [MPVEventHandlerThread] ytm_player.services.player: mpv[ffmpeg]: tls: Error decoding the received TLS packet.
+2026-10-07 20:15:51 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:15:56 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:18:30 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:18:34 [ERROR] [MPVEventHandlerThread] ytm_player.services.player: mpv[ffmpeg]: https: Error reading HTTP response: Input/output error
+2026-10-07 20:18:35 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:19:40 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:19:45 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:21:29 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:22:11 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:22:17 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:22:21 [WARNING] [asyncio_5] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:23:43 [WARNING] [asyncio_3] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:25:39 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:27:18 [WARNING] [asyncio_5] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:29:36 [WARNING] [asyncio_4] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:31:36 [WARNING] [asyncio_5] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:32:27 [WARNING] [asyncio_4] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:32:49 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:37:13 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:37:27 [WARNING] [asyncio_4] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:37:31 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:41:10 [WARNING] [asyncio_4] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:44:54 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:47:06 [WARNING] [asyncio_3] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:50:33 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:53:51 [WARNING] [asyncio_5] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 20:59:50 [WARNING] [asyncio_3] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:04:07 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:04:23 [WARNING] [asyncio_3] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:04:26 [ERROR] [MPVEventHandlerThread] ytm_player.services.player: mpv[ffmpeg]: tls: Error decoding the received TLS packet.
+2026-10-07 21:09:26 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:09:30 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:13:10 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:16:25 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:21:05 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:24:36 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:27:11 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:30:24 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:34:06 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:34:27 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:37:24 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-07 21:40:12 [CRITICAL] [MPVEventHandlerThread] ytm_player.services.player: mpv[clipboard/wayland]: Error occurred on the display fd
+2026-10-09 18:03:04 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:03:10 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:05:00 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:06:51 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:09:33 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:11:40 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:13:53 [WARNING] [asyncio_5] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:16:12 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:18:11 [WARNING] [asyncio_3] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:20:05 [WARNING] [asyncio_5] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:22:19 [WARNING] [asyncio_4] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:24:41 [WARNING] [asyncio_5] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:26:59 [WARNING] [asyncio_4] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:30:28 [WARNING] [asyncio_5] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:31:27 [WARNING] [asyncio_4] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:33:54 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:33:59 [WARNING] [asyncio_5] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:37:01 [CRITICAL] [MPVEventHandlerThread] ytm_player.services.player: mpv[clipboard/wayland]: Error occurred on the display fd
+2026-10-09 18:56:05 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:56:09 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:57:14 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:58:58 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:59:40 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 18:59:44 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 19:00:39 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 19:02:07 [WARNING] [asyncio_5] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 19:03:28 [WARNING] [asyncio_1] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 19:05:25 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 19:07:04 [WARNING] [asyncio_5] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 19:09:21 [WARNING] [asyncio_4] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 20:57:04 [WARNING] [asyncio_0] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies
+2026-10-09 20:57:09 [WARNING] [asyncio_2] ytm_player.services.stream: yt-dlp: [youtube] Skipping client "android" since it does not support cookies

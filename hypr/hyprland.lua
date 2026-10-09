@@ -259,11 +259,6 @@ hl.gesture({
 
 -- Example per-device config
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
-hl.device({
-    name        = "epic-mouse-v1",
-    sensitivity = -0.5,
-})
-
 
 ---------------------
 ---- KEYBINDINGS ----
@@ -288,20 +283,26 @@ hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(ipc .. "panel-toggle launcher"))
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(ipc .. "panel-toggle control-center"))
-hl.bind(mainMod .. " + comma", hl.dsp.exec_cmd(ipc .. "settings-toggle"))
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(ipc .. "panel-toggle wallpaper"))
+hl.bind(mainMod .. " + R",        hl.dsp.exec_cmd(ipc .. "panel-toggle launcher"))
+hl.bind(mainMod .. " + E",        hl.dsp.exec_cmd(ipc .. "panel-toggle control-center"))
+hl.bind(mainMod .. " + comma",    hl.dsp.exec_cmd(ipc .. "settings-toggle"))
+hl.bind(mainMod .. " + W",        hl.dsp.exec_cmd(ipc .. "panel-toggle wallpaper"))
 hl.bind(mainMod .. "+ SHIFT + W", hl.dsp.exec_cmd(ipc .. "wallpaper-next"))
 -- hl.bind("ALT + Tab", hl.dsp.exec_cmd(ipc .. "window-switcher"))
 
+-- For debugging
 -- hl.bind(mainMod .. "+Z", hl.dsp.exec_cmd("kitty -e --hold hyprctl activewindow"))
+-- hl.bind(mainMod .. "+X", hl.dsp.exec_cmd("kitty -e --hold hyprctl layers"))
 
 hl.bind(mainMod .. "+L", hl.dsp.exec_cmd(ipc .. "session lock"))
 hl.bind(mainMod .. "+D", hl.dsp.exec_cmd(ipc .. "panel-toggle session"))
-hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m output -m active --clipboard-only"))
-hl.bind("SHIFT + Print", hl.dsp.exec_cmd("hyprshot -m region --clipboard-only"))
-hl.bind("CONTROL + Print", hl.dsp.exec_cmd("hyprshot -m output -m active"))
+
+-- Screenshots
+-- I could've just used hyprshot but I thought reinventing the wheel was necessary to fix the animations
+hl.bind("Print", hl.dsp.exec_cmd('grim - | wl-copy && noctalia msg notification-show "Screenshot saved to clipboard"'))
+hl.bind("SHIFT + Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy && noctalia msg notification-show "Screenshot saved to clipboard"'))
+hl.bind("CONTROL + Print", hl.dsp.exec_cmd('grim "/home/$USER/Pictures/Screenshots/$(date "+%Y%m%d_%Hh%Mm%Ss_grim.png")" && noctalia msg notification-show "Screenshot saved to file" "~/Pictures/Screenshots/$(date "+%Y%m%d_%Hh%Mm%Ss_grim.png")"'))
+
 
 -- Noctalia Settings
 hl.window_rule({
@@ -319,6 +320,14 @@ hl.layer_rule({
   ignore_alpha = 0.5,
   blur = true,
   blur_popups = true,
+})
+
+hl.layer_rule({
+	name = "slurp",
+	match = {
+		namespace = "selection",
+	},
+	no_anim = true,
 })
 
 
@@ -352,7 +361,7 @@ hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-")
 
 -- Requires playerctl
 hl.bind(mainMod .. " + Tab",    hl.dsp.exec_cmd("playerctl next"),   { locked = true })
-hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
+hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
