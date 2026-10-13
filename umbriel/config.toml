@@ -233,6 +233,7 @@ bottom = 20
 
 [output."LG Electronics LG ULTRAGEAR 103NTVSGK735"]
 workspace_axis = "horizontal"
+mode = "2560x1440@100"
 
 [layout.scrolling]
 default_extent_fraction = 0.5
