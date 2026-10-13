@@ -1,0 +1,37 @@
+{
+  "plugins": {
+    "alpha": {
+      "rev": "4ba26e41990c11620c96c0e1cff20eab65efde4a",
+      "src": "https://github.com/goolord/alpha-nvim"
+    },
+    "autoclose": {
+      "rev": "bcad8e84d9cd78ba73433cb396b68e489af11e31",
+      "src": "https://github.com/m4xshen/autoclose.nvim"
+    },
+    "base16-colorscheme": {
+      "rev": "feefc7e2a7bc7c2d814be1cc4b37ed599c52dad1",
+      "src": "https://github.com/RRethy/base16-nvim"
+    },
+    "blink": {
+      "rev": "78336bc89ee5365633bcf754d93df01678b5c08f",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": "1.0.0 - 2.0.0"
+    },
+    "catppuccin": {
+      "rev": "edefef779ab08ce1a4a404713e3012b0d202bd35",
+      "src": "https://github.com/catppuccin/nvim"
+    },
+    "colorizer": {
+      "rev": "a065833f35a3a7cc3ef137ac88b5381da2ba302e",
+      "src": "https://github.com/norcalli/nvim-colorizer.lua"
+    },
+    "gruvbox": {
+      "rev": "154eb5ff5b96d0641307113fa385eaf0d36d9796",
+      "src": "https://github.com/ellisonleao/gruvbox.nvim"
+    },
+    "gruvbox-material": {
+      "rev": "11d779b26a9ab2b3db8c22c6ac9fb6e8ed4fea79",
+      "src": "https://github.com/sainnhe/gruvbox-material"
+    }
+  }
+}
