@@ -25,7 +25,8 @@ files = ["noctalia.toml"]
 # Optional session examples. XWayland support is enabled by default.
 # https://docs.noctalia.dev/umbriel/configuration/#general
 [general]
-autostart = ["noctalia", "kitty -e --hold fastfetch"]
+autostart = ["noctalia", "kitty -1 -e --hold fastfetch", "keyd-application-mapper -dv"]
+show_cheatsheet = false
 # xwayland = false
 # Sharp X11 apps and games on scaled outputs; they see physical resolutions.
 # xwayland_native_resolution = true
@@ -69,7 +70,9 @@ autostart = ["noctalia", "kitty -e --hold fastfetch"]
 # Blur uses a smaller radius than the built-in default.
 # https://docs.noctalia.dev/umbriel/appearance/
 
-
+[appearance]
+corner_radius = 0
+border_width = 0
 
 [appearance.blur]
 radius = 3
@@ -112,6 +115,7 @@ radius = 3
 # https://docs.noctalia.dev/umbriel/input/
 [input.keyboard]
 layout = "gb"
+options = ""
 
 # Focus can follow the pointer across tiled, floating, and pinned windows.
 [input.focus]
@@ -222,6 +226,7 @@ mode = "dwindle"
 # extent_presets = [0.333, 0.5, 0.667]
 
 [layout.struts]
+top = 10
 left = 20
 right = 20
 bottom = 20
@@ -354,6 +359,9 @@ workspace_background = "#ffffff00"
 background_tint = "#ffffff00"
 
 [animation.windows_in]
+style = "slide"
+
+[animation.windows_out]
 style = "slide"
 
 # Optional live workspace reveal (see docs/user/animation.md).

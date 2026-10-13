@@ -7,7 +7,7 @@ if [[ $wallpaper_path =~ green ]]; then
 elif [[ $wallpaper_path =~ jade ]]; then
 	echo $(noctalia msg color-scheme-set community 'Osaka jade')
 elif [[ $wallpaper_path =~ blue ]]; then
-	echo $(noctalia msg color-scheme-set community 'Atuel')
+	echo $(noctalia msg color-scheme-set builtin 'Nord')
 elif [[ $wallpaper_path =~ pink ]]; then
 	echo $(noctalia msg color-scheme-set custom 'Koneko_custom')
 elif [[ $wallpaper_path =~ purple ]]; then

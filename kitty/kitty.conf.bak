@@ -1,7 +1,7 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # BEGIN_KITTY_FONTS
-font_family      family="Terminess Nerd Font"
+font_family      family="SauceCodePro Nerd Font"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
@@ -272,6 +272,7 @@ bold_italic_font auto
 #: setting text_fg_override_threshold to 0 to see if this is the cause
 #: of the problem or consider using the ratio mode of operation
 #: described above instead of the % mode of operation.
+
 
 #: }}}
 
@@ -1720,7 +1721,7 @@ bold_italic_font auto
 
 
 #: Note that formatting is done by Python's string formatting
-#: machinery, so you can use, for instance, {layout_name[:2].upper()}
+#: machinery, so you can use, for isdaasdanstance, {layout_name[:2].upper()}
 #: to show only the first two letters of the layout name, upper-cased.
 #: If you want to style the text, you can use styling directives, for
 #: example:
@@ -1798,6 +1799,8 @@ background_opacity 0.7
 #: a performance cost). Changing this option when reloading the config
 #: will only work if dynamic_background_opacity was enabled in the
 #: original config.
+
+dynamic_background_opacity yes
 
 background_blur 1
 
@@ -2085,7 +2088,7 @@ shell fish
 #: See rc_custom_auth <https://sw.kovidgoyal.net/kitty/remote-
 #: control/#rc-custom-auth> for details.
 
-# allow_remote_control no
+allow_remote_control yes
 
 #: Allow other programs to control kitty. If you turn this on, other
 #: programs can control all aspects of kitty, including sending text
