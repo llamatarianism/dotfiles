@@ -1,3 +1,0 @@
-[theme.templates.user.drift]
-input_path  = "~/Projects/drift-template/community-templates/drift/drift.toml"
-output_path = "~/.config/drift/config.toml"
