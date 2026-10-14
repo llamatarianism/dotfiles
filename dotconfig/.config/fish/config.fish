@@ -25,3 +25,6 @@ alias ll="ls -la"
 alias vim="nvim"
 alias bc="bc -q"
 thefuck --alias | source
+
+# Created by `pipx` on 2026-10-13 21:20:39
+set PATH $PATH /home/lune/.local/bin

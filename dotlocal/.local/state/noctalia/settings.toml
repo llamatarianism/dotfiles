@@ -74,7 +74,7 @@ transition_duration = 500
 [lockscreen_widgets]
 enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-widget-0000000000000001" ]
+widget_order = [ "lockscreen-login-box@HDMI-A-2", "lockscreen-login-box@HDMI-A-1", "lockscreen-widget-0000000000000001" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -107,6 +107,33 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-widget-00000000000
         show_session_buttons = true
         show_unlock_hint = false
         show_weather = false
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1280.0
+    cy = 1258.0
+    output = "HDMI-A-2"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
     box_height = 176.0
@@ -212,10 +239,10 @@ settings_window_translucent = true
 
 [theme]
 builtin = "Nord"
-community_palette = "Shinonome"
+community_palette = "Gruvbox Material"
 custom_palette = "Koneko_custom"
 shell_mode = "dark"
-source = "community"
+source = "builtin"
 wallpaper_scheme = "faithful"
 
     [theme.templates]
@@ -231,13 +258,16 @@ transition = [ "disc" ]
     interval_seconds = 1200
 
     [wallpaper.default]
-    path = "/home/lune/Pictures/Wallpapers/amiya2_peach.jpg"
+    path = "/home/lune/Pictures/Wallpapers/skadi_blue.png"
 
     [wallpaper.last]
-    path = "/home/lune/Pictures/Wallpapers/amiya2_peach.jpg"
+    path = "/home/lune/Pictures/Wallpapers/skadi_blue.png"
 
     [wallpaper.monitors.HDMI-A-1]
     path = "/home/lune/Pictures/Wallpapers/amiya2_peach.jpg"
+
+    [wallpaper.monitors.HDMI-A-2]
+    path = "/home/lune/Pictures/Wallpapers/skadi_blue.png"
 
 [widget.audio_visualizer]
 show_when_idle = true

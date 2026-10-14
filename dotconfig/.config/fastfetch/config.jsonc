@@ -6,16 +6,11 @@
     "os",
     "host",
     "kernel",
-    "uptime",
     "shell",
     "display",
     "de",
     "wm",
     "wmtheme",
-    "theme",
-    "icons",
-    "font",
-    "cursor",
     "terminal",
     "terminalfont",
     "cpu",
@@ -23,17 +18,8 @@
     "memory",
     "swap",
     "disk",
-    "battery",
-    "poweradapter",
-    "localip",
     "locale",
     "break",
     "colors"
-  ],
-  "logo": {
-	  "color": {
-		  "1": "blue",
-		  "2": "blue"
-	  }
-  }
+  ]
 }
