@@ -1,0 +1,278 @@
+[include]
+files = ["custom-shaders/effect.toml"]
+
+[include.optional]
+files = ["noctalia.toml"]
+
+# ==============================================================================
+# General
+
+[general]
+autostart = ["noctalia", "kitty -1 -e --hold 'cowsay' '-f' 'llama' 'welcome'", "keyd-application-mapper -dv"]
+show_cheatsheet = false
+
+[appearance]
+corner_radius = 0
+border_width = 1 
+drag_opacity = 0.4
+
+[appearance.blur]
+optimized = false
+passes = 3
+radius = 3
+noise = 0.02
+brightness = 0.9
+contrast = 0.9
+saturation = 1.1
+
+# ==============================================================================
+# Input
+[input.keyboard]
+layout = "gb"
+options = ""
+
+[input.focus]
+follows_mouse = true
+follows_mouse_max_scroll = 0
+# ==============================================================================
+# Keybinds
+[keybinds]
+
+"Mod" =   { action = "overview-toggle",                                repeat = false }
+"Mod+Q" = { action = "spawn:kitty -1",                                 repeat = false }
+"Mod+C" = { action = "window-close",                                   repeat = false }
+"Mod+R" = { action = "spawn:noctalia msg panel-toggle launcher",       repeat = false }
+"Mod+D" = { action = "spawn:noctalia msg panel-toggle session",        repeat = false }
+"Mod+E" = { action = "spawn:noctalia msg panel-toggle control-center", repeat = false }
+"Mod+A" = { action = "spawn:noctalia msg panel-toggle clipboard",      repeat = false }
+"Mod+W" = { action = "spawn:noctalia msg panel-toggle wallpaper",      repeat = false }
+"Mod+Shift+W" = { action = "spawn:noctalia msg wallpaper-next",        repeat = false }
+"Mod+L" = "spawn:noctalia msg session lock"
+
+
+"Mod+Alt+Right" = "column-focus-tab-next"
+"Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+
+"Mod+Left" = "window-focus-left"
+"Mod+Down" = "window-focus-down"
+"Mod+Up" = "window-focus-up"
+"Mod+Right" = "window-focus-right"
+
+# "Mod+H" = "window-focus-left"
+# "Mod+J" = "window-focus-down"
+# "Mod+K" = "window-focus-up"
+# "Mod+L" = "window-focus-right"
+"Mod+F1" = "window-focus-next"
+"Mod+Shift+Left" = "column-move-left"
+"Mod+Shift+Down" = "window-move-down"
+"Mod+Shift+Up" = "window-move-up"
+"Mod+Shift+Right" = "column-move-right"
+
+# Window state and layout
+"Mod+V" = { action = "window-toggle-floating", repeat = false }
+"Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }
+"Mod+P" = { action = "window-toggle-pinned", repeat = false }
+"Mod+M" = { action = "window-toggle-maximize-to-edges", repeat = false }
+"Mod+F" = { action = "window-toggle-fullscreen", repeat = false }
+"Mod+Ctrl+F" = { action = "window-toggle-maximize", repeat = false }
+"Mod+S" = "window-cycle-primary-extent"
+"Mod+Shift+R" = "window-cycle-primary-extent-back"
+"Mod+Comma" = "window-consume-left"
+"Mod+Period" = "window-consume-right"
+"Mod+Ctrl+Comma" = "window-consume-from-left"
+"Mod+Ctrl+Period" = "window-consume-from-right"
+
+"Mod+Alt+Left" = "column-focus-tab-previous"
+
+"Mod+MouseMiddle" = "layout-scroll-drag"
+"Mod+WheelDown" = "window-focus-right"
+"Mod+WheelUp" = "window-focus-left"
+"Mod+MouseForward" = "window-move-right"
+"Mod+MouseBack" = "window-move-left"
+
+
+# Workspaces
+"Mod+1" = "workspace-switch:1"
+"Mod+2" = "workspace-switch:2"
+"Mod+3" = "workspace-switch:3"
+"Mod+4" = "workspace-switch:4"
+"Mod+5" = "workspace-switch:5"
+"Mod+6" = "workspace-switch:6"
+"Mod+7" = "workspace-switch:7"
+"Mod+8" = "workspace-switch:8"
+"Mod+9" = "workspace-switch:9"
+"Mod+Shift+1" = "window-move-to-workspace:1"
+"Mod+Shift+2" = "window-move-to-workspace:2"
+"Mod+Shift+3" = "window-move-to-workspace:3"
+"Mod+Shift+4" = "window-move-to-workspace:4"
+"Mod+Shift+5" = "window-move-to-workspace:5"
+"Mod+Shift+6" = "window-move-to-workspace:6"
+"Mod+Shift+7" = "window-move-to-workspace:7"
+"Mod+Shift+8" = "window-move-to-workspace:8"
+"Mod+Shift+9" = "window-move-to-workspace:9"
+
+
+# Screenshots
+
+"Print"       = { action = "spawn:noctalia msg screenshot-fullscreen", repeat = false } 
+"Shift+Print" = { action = "spawn:noctalia msg screenshot-region",     repeat = false } 
+
+# Media controls
+"Mod+Tab" =       "spawn:playerctl next"
+"Mod+Backspace" = "spawn:playerctl previous"
+"Mod+Space" =     "spawn:playerctl play-pause"
+
+
+# ==============================================================================
+# Layout
+
+[layout]
+mode = "scrolling"
+extent_presets = [0.25, 0.5, 0.667]
+
+[layout.struts]
+top = 10
+left = 20
+right = 20
+bottom = 20
+
+[output."LG Electronics LG ULTRAGEAR 103NTVSGK735"]
+mode = "2560x1440@144"
+
+[layout.scrolling]
+default_extent_fraction = 0.5
+
+# A tab group shows one window at a time below a bar of titles, and stacks and
+# resizes like any row of its column. Mod+W tabs the focused window with the
+# windows stacked beside it; Mod+Shift+J/K move a tab out of its group or a
+# window into one. Click, scroll, or drag a title to switch, reorder, or pull it
+# out.
+# [layout.tabs]
+# default_display = "normal"
+# new_tab_position = "after_active"
+# middle_click_closes = true
+#
+# [appearance.tab_bar]
+# style = "titles"         # "indicator" draws thin slots without titles
+# height = 24
+# font = "sans 10"
+# visible = true           # false hides every bar; tabs keep working
+# hide_when_single = false
+# max_tabs = 6            # show at most 6 slots; more tabs scroll
+# overflow = "scroll"      # or "shrink" to fit every tab
+
+# ==============================================================================
+# Window rules
+# Rules combine in order, with later values overriding earlier ones.
+# https://docs.noctalia.dev/umbriel/window-rules/
+
+# Blur windows using the non-optimized path so translucent windows include
+# overlapping windows behind them.
+[[window_rule]]
+blur = true
+blur_optimized = false
+
+[[window_rule]]
+match.is_focused = true
+
+[[window_rule]]
+match.app_id = "^dev.noctalia.Noctalia$"
+default_floating = true
+default_floating_size_px = { width = 1020, height = 900 }
+
+[[window_rule]]
+match.app_id = "^dev.noctalia.UmbrielSharePicker$"
+default_floating = true
+default_floating_size_px = { width = 800, height = 600 }
+
+[[window_rule]]
+match.title = "^(Picture-in-Picture|Picture in picture)$"
+default_floating = true
+default_maximize = false
+default_position = { x = 20, y = 20, anchor = "bottom_right" }
+
+[[window_rule]]
+match.title = "^notificationtoasts_.+_desktop"
+default_position = { x = 0, y = 0, anchor = "bottom_right" }
+default_focused = false
+default_pinned = true
+
+[[window_rule]]
+match.app_id = "steam"
+default_floating = true
+
+[[window_rule]]
+match.title = "Steam"
+default_floating = false
+
+
+# Named scratchpads can launch an application when toggled while empty.
+# [[scratchpad]]
+# name = "music"
+# spawn_when_empty = "spotify"
+
+# [[window_rule]]
+# match.app_id = "^spotify$"
+# default_scratchpad = "music"
+
+# Give scratchpad windows their own border colors.
+# [[window_rule]]
+# match.is_scratchpad = true
+# border_color_focused = "#E5C07BFF"
+# border_color_unfocused = "#5C4A2AFF"
+
+# Leave an application that draws its own corners and shadow undecorated.
+# [[window_rule]]
+# match.app_id = "^org[.]gnome[.]TextEditor$"
+# border_width = 0
+# corner_radius = 0
+# shadow = false
+
+# ==============================================================================
+# Layer rules
+# https://docs.noctalia.dev/umbriel/layer-rules/
+[[layer_rule]]
+match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
+blur = true
+blur_ignore_alpha = 0.5
+blur_popups = true
+blur_optimized = false
+
+
+# ==============================================================================
+# Overview
+# Built-in overview and animation values are used. The top-left hot corner opens
+# the overview after a short delay.
+# Overview: https://docs.noctalia.dev/umbriel/workspaces-overview/
+# Animation: https://docs.noctalia.dev/umbriel/animation/
+[hot_corners.top_left]
+enabled = true
+delay_ms = 500
+action = "overview-open"
+
+[overview]
+background_blur = false 
+workspace_wallpaper = false
+shortcuts = false
+
+[colors.overview]
+workspace_background = "#ffffff00"
+background_tint = "#ffffff00"
+
+
+[animation.windows_move]
+enabled = true
+
+[animation.windows_in]
+style = "zoom"
+curve = "easeout"
+duration_ms = 250
+
+[animation.windows_out]
+curve = "easeout"
+duration_ms = 250
+
+
+# Optional live workspace reveal (see docs/user/animation.md).
+# Add the bundled effects/animation/workspace_wipe/effect.toml to your includes.
+

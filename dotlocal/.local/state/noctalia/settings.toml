@@ -1,4 +1,4 @@
-config_version = 14
+config_version = 15
 
 [accessibility]
 ui_scale = 1.1000000089406967
@@ -16,7 +16,7 @@ order = [ "default" ]
     background_opacity = 0.69999998435378075
     compositor_blur = false
     concave_edge_corners = false
-    end = [ "group:g3", "group:g1" ]
+    end = [ "date", "group:g1" ]
     font_scale = 1.0999999828636646
     margin_ends = 850
     radius = 0
@@ -30,24 +30,31 @@ order = [ "default" ]
         border_width = 1.0
         enabled = true
         fill = "surface_variant"
-        id = "g3"
-        members = [ "date", "weather" ]
-        opacity = 0.0
-        padding = 6.0
-
-        [[bar.default.capsule_group]]
-        accordion = false
-        accordion_direction = "end"
-        border_width = 1.0
-        enabled = true
-        fill = "surface_variant"
         id = "g1"
-        members = [ "volume", "notifications", "network", "session" ]
+        members = [ "weather", "volume", "notifications", "network", "session" ]
         opacity = 0.0
         padding = 6.0
 
 [control_center]
 hidden_tabs = [ "monitor", "power" ]
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "clipboard"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "session"
 
 [desktop_widgets]
 schema_version = 2
@@ -59,6 +66,16 @@ widget_order = []
     visible = true
 
     [desktop_widgets.widget]
+
+[dock]
+background_opacity = 0.69999998435378075
+icon_size = 35
+magnification = false
+magnification_scale = 1.2000000029802322
+position = "left"
+radius = 0
+reserve_space = false
+show_instance_count = false
 
 [hooks]
 started = "~/.config/noctalia/hooks/wallpaper_theme.sh"
@@ -74,12 +91,48 @@ transition_duration = 500
 [lockscreen_widgets]
 enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@HDMI-A-2", "lockscreen-login-box@HDMI-A-1", "lockscreen-widget-0000000000000001" ]
+widget_order = [
+    "lockscreen-login-box@DP-1",
+    "lockscreen-login-box@HDMI-A-2",
+    "lockscreen-login-box@HDMI-A-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000003",
+    "lockscreen-widget-0000000000000004"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 1280.0
+    cy = 848.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "compact"
+        show_caps_lock = true
+        show_keyboard_layout = false
+        show_login_button = true
+        show_media = false
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = false
+        show_weather = false
 
     [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
     box_height = 128.0
@@ -104,6 +157,7 @@ widget_order = [ "lockscreen-login-box@HDMI-A-2", "lockscreen-login-box@HDMI-A-1
         show_keyboard_layout = true
         show_login_button = false
         show_media = false
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = false
         show_weather = false
@@ -131,6 +185,7 @@ widget_order = [ "lockscreen-login-box@HDMI-A-2", "lockscreen-login-box@HDMI-A-1
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -160,6 +215,57 @@ widget_order = [ "lockscreen-login-box@HDMI-A-2", "lockscreen-login-box@HDMI-A-1
         shadow = false
         timezone = ""
 
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1280.0
+    cy = 608.5
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background_opacity = 0.59999999999999998
+        shadow = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 32.0
+    box_width = 160.0
+    cx = 1376.0
+    cy = 912.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "button"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        background = true
+        command = "reboot"
+        glyph = "reboot"
+        label = "Reboot"
+        variant = "default"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    box_height = 32.0
+    box_width = 160.0
+    cx = 1184.0
+    cy = 912.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = -0.0
+    type = "button"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
+        background = true
+        command = "shutdown"
+        glyph = "shutdown"
+        label = "Shutdown"
+        variant = "default"
+
 [notification]
 layer = "overlay"
 
@@ -177,10 +283,10 @@ panel_placement = "floating"
 panel_position = "center"
 
 [plugins]
-enabled = [ "noctalia/bitwarden", "decksters-lab/palette-creator" ]
+enabled = [ "noctalia/bitwarden", "decksters-lab/palette-creator", "noctalia/screen_recorder" ]
 
 [shell]
-avatar_path = "/home/lune/Pictures/avatar.png"
+avatar_path = "/home/lune/Pictures/icon.jpg"
 button_borders = false
 card_borders = false
 font_family = "Sometype Mono Medium"
@@ -191,6 +297,12 @@ settings_window_translucent = true
 
     [shell.animation]
     speed = 2.0000000298023224
+
+    [shell.launcher]
+    category_icons_only = true
+    layout = "simple"
+    search_position = "top"
+    width = 560
 
     [shell.panel]
     borders = false
@@ -239,8 +351,9 @@ settings_window_translucent = true
 
 [theme]
 builtin = "Nord"
-community_palette = "Gruvbox Material"
+community_palette = "Murata"
 custom_palette = "Koneko_custom"
+mode = "dark"
 shell_mode = "dark"
 source = "builtin"
 wallpaper_scheme = "faithful"
@@ -254,20 +367,22 @@ directory = "/home/lune/Pictures/Wallpapers"
 transition = [ "disc" ]
 
     [wallpaper.automation]
-    enabled = true
     interval_seconds = 1200
 
     [wallpaper.default]
-    path = "/home/lune/Pictures/Wallpapers/skadi_blue.png"
+    path = "/home/lune/Pictures/Wallpapers/amiya_blue.jpg"
 
     [wallpaper.last]
-    path = "/home/lune/Pictures/Wallpapers/skadi_blue.png"
+    path = "/home/lune/Pictures/Wallpapers/amiya_blue.jpg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/lune/Pictures/Wallpapers/amiya_blue.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
     path = "/home/lune/Pictures/Wallpapers/amiya2_peach.jpg"
 
     [wallpaper.monitors.HDMI-A-2]
-    path = "/home/lune/Pictures/Wallpapers/skadi_blue.png"
+    path = "/home/lune/Pictures/Wallpapers/texas_peach.jpg"
 
 [widget.audio_visualizer]
 show_when_idle = true
@@ -281,7 +396,7 @@ interactive = false
 type = "custom_button"
 
 [widget.date]
-format = "{:%d-%m-20%y}"
+format = "{:%d %b %Y}"
 
 [widget.launcher]
 custom_image = "/home/lune/Pictures/arch-linux-logo-1179395631.png"
@@ -303,9 +418,9 @@ type = "spacer"
 stat = "gpu_temp"
 
 [widget.taskbar]
-group_by_workspace = true
+icon_scale = 0.5
+inactive_opacity = 0.55000000000000004
 only_active_workspace = true
-show_active_indicator = false
 show_workspace_label = false
 workspace_label_placement = "centered"
 

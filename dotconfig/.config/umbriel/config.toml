@@ -1,20 +1,5 @@
-# Umbriel starting configuration
-#
-# Copy this file to ~/.config/umbriel/config.toml. Most changes apply when the
-# file is saved. Check edits with `umbriel config validate`.
-#
-# Complete reference: https://docs.noctalia.dev/umbriel/
-#
-# Commented settings below are examples, not built-in defaults.
-
-# ==============================================================================
-# Includes
-
-# Optional split configuration
-# https://docs.noctalia.dev/umbriel/configuration/#include
 [include]
-files = [
-]
+files = ["custom-shaders/effect.toml", "/usr/share/umbriel/effects/animation/squash/effect.toml"]
 
 [include.optional]
 files = ["noctalia.toml"]
@@ -22,129 +7,57 @@ files = ["noctalia.toml"]
 # ==============================================================================
 # General
 
-# Optional session examples. XWayland support is enabled by default.
-# https://docs.noctalia.dev/umbriel/configuration/#general
 [general]
 autostart = ["noctalia", "kitty -1 -e --hold fastfetch", "keyd-application-mapper -dv"]
 show_cheatsheet = false
-# xwayland = false
-# Sharp X11 apps and games on scaled outputs; they see physical resolutions.
-# xwayland_native_resolution = true
-
-# ==============================================================================
-# Lid events
-
-# Remove the laptop panel from the desktop while the lid is closed, then
-# restore it when the lid opens. Replace eDP-1 with the name from
-# `umbriel outputs`.
-# https://docs.noctalia.dev/umbriel/configuration/#events
-# [events]
-# lid_close = "umbriel msg output-disable:eDP-1"
-# lid_open = "umbriel msg output-enable:eDP-1"
-
-# ==============================================================================
-# Screencast
-
-# By default, the first target-changing action during an active share asks for
-# confirmation. Disable that protection only if immediate keybind changes are
-# preferred.
-# https://docs.noctalia.dev/umbriel/configuration/#screencast
-# [screencast]
-# disable_dynamic_confirmation = true
-
-# ==============================================================================
-# Outputs
-
-# Outputs are machine-specific. Run `umbriel outputs` to find names and modes.
-# https://docs.noctalia.dev/umbriel/outputs/
-#
-# [output.DP-1]
-# mode = "2560x1440@144"
-# position = [0, 0]
-# scale = 1.25
-# vrr = "fullscreen"
-# hdr = "auto"
-
-# ==============================================================================
-# Appearance
-# Blur uses a smaller radius than the built-in default.
-# https://docs.noctalia.dev/umbriel/appearance/
 
 [appearance]
 corner_radius = 0
-border_width = 0
+border_width = 0 
+drag_opacity = 0.4
 
 [appearance.blur]
+optimized = false
+passes = 3
 radius = 3
-
-# Choose the background color shown if the lock screen takes too long to appear.
-# [colors]
-# backdrop = "#000000FF"
-
-# ==============================================================================
-# Effects
-# Every effect is off until a preset is selected; border and window effects
-# scale with overview zoom. Include a bundled preset (adjust /usr for the
-# package prefix), then select it by name.
-# https://docs.noctalia.dev/umbriel/effects/
-# [include]
-# files = ["/usr/share/umbriel/effects/border/pulse/effect.toml"]
-# For a cursor tail, include /usr/share/umbriel/effects/cursor/trail/effect.toml
-# and set cursor = "trail" in [effects].
-# For audio-reactive borders, include /usr/share/umbriel/effects/border/audio/effect.toml
-# and set border = "audio" in [effects].
-# Pools accept matching presets defined/included separately. This one-member
-# example uses the bundled pulse preset; add other border names to choose.
-# [effects.pool.borders]
-# kind = "border"
-# choose = ["pulse"]
-# selection = "unused_first" # or round_robin, random
-# Select with border = "borders" in your [effects] table.
-# Add to your existing [keybinds] table:
-# "Mod+Shift+E" = "effect-border-cycle:borders"
-# "Mod+Ctrl+E" = "effect-border-toggle"
-# "Mod+Alt+E" = "effect-border-reset"
-
-# [effects]
-# border = "pulse"
-
+noise = 0.02
+brightness = 0.9
+contrast = 0.9
+saturation = 1.1
 
 # ==============================================================================
 # Input
-# Enable NumLock when a physical keyboard connects.
-# https://docs.noctalia.dev/umbriel/input/
 [input.keyboard]
 layout = "gb"
 options = ""
 
-# Focus can follow the pointer across tiled, floating, and pinned windows.
 [input.focus]
 follows_mouse = true
-
-# Confine touch input to one display.
-# [input.touch]
-# enabled = true
-# map_to_output = "eDP-1"
-
+follows_mouse_max_scroll = 0
 # ==============================================================================
 # Keybinds
-# Defining this table replaces the built-in bind set, so every active bind that
-# should remain available is listed here.
-# Syntax: https://docs.noctalia.dev/umbriel/keybinds/
-# Actions: https://docs.noctalia.dev/umbriel/actions/
 [keybinds]
 
-# Applications and session
-"Mod+Q" = { action = "spawn:kitty", repeat = false }
-"Mod+R" = "spawn:noctalia msg panel-toggle launcher"
-"Mod+C" = { action = "window-close", repeat = false }
+"Mod" =   { action = "overview-toggle",                                repeat = false }
+"Mod+Q" = { action = "spawn:kitty -1",                                 repeat = false }
+"Mod+C" = { action = "window-close",                                   repeat = false }
+"Mod+R" = { action = "spawn:noctalia msg panel-toggle launcher",       repeat = false }
+"Mod+D" = { action = "spawn:noctalia msg panel-toggle session",        repeat = false }
+"Mod+E" = { action = "spawn:noctalia msg panel-toggle control-center", repeat = false }
+"Mod+A" = { action = "spawn:noctalia msg panel-toggle clipboard",      repeat = false }
+"Mod+W" = { action = "spawn:noctalia msg panel-toggle wallpaper",      repeat = false }
+"Mod+Shift+W" = { action = "spawn:noctalia msg wallpaper-next",        repeat = false }
+"Mod+L" = "spawn:noctalia msg session lock"
+
+
+"Mod+Alt+Right" = "column-focus-tab-next"
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
 
-# Focus and movement
 "Mod+Left" = "window-focus-left"
 "Mod+Down" = "window-focus-down"
 "Mod+Up" = "window-focus-up"
 "Mod+Right" = "window-focus-right"
+
 # "Mod+H" = "window-focus-left"
 # "Mod+J" = "window-focus-down"
 # "Mod+K" = "window-focus-up"
@@ -162,21 +75,21 @@ follows_mouse = true
 "Mod+M" = { action = "window-toggle-maximize-to-edges", repeat = false }
 "Mod+F" = { action = "window-toggle-fullscreen", repeat = false }
 "Mod+Ctrl+F" = { action = "window-toggle-maximize", repeat = false }
-# "Mod+R" = "window-cycle-primary-extent"
+"Mod+S" = "window-cycle-primary-extent"
 "Mod+Shift+R" = "window-cycle-primary-extent-back"
 "Mod+Comma" = "window-consume-left"
 "Mod+Period" = "window-consume-right"
 "Mod+Ctrl+Comma" = "window-consume-from-left"
 "Mod+Ctrl+Period" = "window-consume-from-right"
-# "Mod+W" = { action = "column-toggle-tabbed", repeat = false }
-"Mod+W" = "spawn:noctalia msg panel-toggle wallpaper"
-"Mod+Shift+W" = { action = "spawn:noctalia msg wallpaper-next", repeat = false }
-"Mod+E" = { action = "spawn:noctalia msg panel-toggle control-center", repeat = false }
-"Mod+Alt+Right" = "column-focus-tab-next"
+
 "Mod+Alt+Left" = "column-focus-tab-previous"
-"Mod+WheelUp" = { action = "workspace-previous", cooldown_ms = 150 }
-"Mod+WheelDown" = { action = "workspace-next", cooldown_ms = 150 }
-"Mod" = { action = "overview-toggle", repeat = false }
+
+"Mod+MouseMiddle" = "layout-scroll-drag"
+"Mod+WheelDown" = "window-focus-right"
+"Mod+WheelUp" = "window-focus-left"
+"Mod+MouseForward" = "window-move-right"
+"Mod+MouseBack" = "window-move-left"
+
 
 # Workspaces
 "Mod+1" = "workspace-switch:1"
@@ -198,42 +111,31 @@ follows_mouse = true
 "Mod+Shift+8" = "window-move-to-workspace:8"
 "Mod+Shift+9" = "window-move-to-workspace:9"
 
-# Scratchpad
-"Mod+Shift+Space" = { action = "window-move-to-scratchpad", repeat = false }
-# "Mod+Space" = "scratchpad-toggle"
-"Mod+Ctrl+Space" = { action = "window-restore-from-scratchpad", repeat = false }
 
-# My shortcuts
+# Screenshots
 
-"Print"           = { action = 'spawn:grim - | wl-copy && noctalia msg notification-show "Screenshot saved to clipboard"', repeat = false }
-"Shift+Print"   = { action = 'spawn:grim -g "$(slurp)" - | wl-copy && noctalia msg notification-show "Screenshot saved to clipboard"', repeat = false }  
-"CONTROL+Print" = { action = 'spawn:grim "/home/$USER/Pictures/Screenshots/$(date "+%Y%m%d_%Hh%Mm%Ss_grim.png")" && noctalia msg notification-show "Screenshot saved to file" "~/Pictures/Screenshots/$(date "+%Y%m%d_%Hh%Mm%Ss_grim.png")"', repeat = false }
+"Print"       = { action = "spawn:noctalia msg screenshot-fullscreen", repeat = false } 
+"Shift+Print" = { action = "spawn:noctalia msg screenshot-region",     repeat = false } 
 
-"Mod+Tab" = "spawn:playerctl next"
-"Mod+Space" = "spawn:playerctl play-pause"
+# Media controls
+"Mod+Tab" =       "spawn:playerctl next"
+"Mod+Backspace" = "spawn:playerctl previous"
+"Mod+Space" =     "spawn:playerctl play-pause"
 
-"Mod+L" = "spawn:noctalia msg session lock"
-"Mod+D" = { action = "spawn:noctalia msg panel-toggle session", repeat = false }
 
 # ==============================================================================
 # Layout
-# New scrolling-layout windows start at half the output width. Without this
-# setting, each application chooses its starting width. Stacked columns retain
-# their most recently focused row when focus leaves and later returns.
-# https://docs.noctalia.dev/umbriel/layout/
+
 [layout]
-mode = "dwindle"
-# extent_presets = [0.333, 0.5, 0.667]
+mode = "scrolling"
+extent_presets = [0.25, 0.5, 0.667]
 
 [layout.struts]
 top = 10
-left = 20
-right = 20
 bottom = 20
 
 [output."LG Electronics LG ULTRAGEAR 103NTVSGK735"]
-workspace_axis = "horizontal"
-mode = "2560x1440@100"
+mode = "2560x1440@144"
 
 [layout.scrolling]
 default_extent_fraction = 0.5
@@ -269,6 +171,9 @@ blur = true
 blur_optimized = false
 
 [[window_rule]]
+match.is_focused = true
+
+[[window_rule]]
 match.app_id = "^dev.noctalia.Noctalia$"
 default_floating = true
 default_floating_size_px = { width = 1020, height = 900 }
@@ -297,14 +202,6 @@ default_floating = true
 [[window_rule]]
 match.title = "Steam"
 default_floating = false
-
-[[window_rule]]
-match.app_id = "kitty"
-match.title = "fastfetch"
-match.at_startup = true
-default_floating = true
-default_floating_size_px = { width = 920, height = 450 }
-default_position = { x = 150, y = 820, anchor = "top_left" }
 
 # Named scratchpads can launch an application when toggled while empty.
 # [[scratchpad]]
@@ -338,6 +235,8 @@ blur_ignore_alpha = 0.5
 blur_popups = true
 blur_optimized = false
 
+[animation.beziers]
+window_flow = [0.20, 0.75, 0.25, 1.0]
 
 # ==============================================================================
 # Overview
@@ -359,11 +258,21 @@ shortcuts = false
 workspace_background = "#ffffff00"
 background_tint = "#ffffff00"
 
+
+[animation.windows_move]
+enabled = true
+# curve = "window_flow"
+# duration_ms = 195
+
 [animation.windows_in]
-style = "slide"
+style = "zoom"
+curve = "easeout"
+duration_ms = 250
 
 [animation.windows_out]
-style = "slide"
+curve = "easeout"
+duration_ms = 250
+
 
 # Optional live workspace reveal (see docs/user/animation.md).
 # Add the bundled effects/animation/workspace_wipe/effect.toml to your includes.
