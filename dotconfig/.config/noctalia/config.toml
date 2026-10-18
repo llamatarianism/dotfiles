@@ -1,3 +1,6 @@
+[shell]
+# corner_radius_scale = 0 
+
 [shell.screenshot]
 copy_to_clipboard = true
 save_to_file = false

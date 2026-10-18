@@ -18,4 +18,6 @@ elif [[ $wallpaper_path =~ red ]]; then
 	echo $(noctalia msg color-scheme-set community 'Murata')
 elif [[ $wallpaper_path =~ cool ]]; then
 	echo $(noctalia msg color-scheme-set community 'Jiva Paper')
+elif [[ $wallpaper_path =~ mono ]]; then
+	echo $(noctalia msg color-scheme-set community 'Zenbones')
 fi

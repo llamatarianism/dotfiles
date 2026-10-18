@@ -1,7 +1,7 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # BEGIN_KITTY_FONTS
-font_family      family="SauceCodePro Nerd Font"
+font_family      family='Sometype Mono' variable_name=SometypeMono wght=506.9767441860465
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
@@ -299,8 +299,8 @@ bold_italic_font auto
 #: so if you want to override it, place your value after the lines
 #: where the theme file is included.
 
-# cursor_shape block
-
+# cursor_shape underline
+#
 #: The cursor shape can be one of block, beam, underline. Note that
 #: when reloading the config this will be changed only if the cursor
 #: shape has not been set by the program running in the terminal. This
@@ -349,7 +349,7 @@ bold_italic_font auto
 #: setting also controls blinking text, which blinks in exact rhythm
 #: with the cursor.
 
-# cursor_trail 0
+cursor_trail 0
 
 #: Set this to a value larger than zero to enable a "cursor trail"
 #: animation. This is an animation that shows a "trail" following the
@@ -2158,7 +2158,7 @@ allow_remote_control yes
 #: recursive expansion and they will override any variables set by
 #: other env directives.
 
-# custom_shaders
+custom_shaders
 
 #: Space separated list of custom shader pipeline names. If multiple
 #: names are specified they are loaded in order and concatenated. You
@@ -3490,3 +3490,5 @@ allow_remote_control yes
 
 
 include themes/noctalia.conf
+
+

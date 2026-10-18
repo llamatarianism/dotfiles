@@ -7,10 +7,10 @@
             "right": 3,
 			"left": 2
         },
-		"color": { "1": "blue", "2": "blue" }
+		"color": { "1": "cyan", "2": "cyan" }
     },
     "display": {
-        "separator": ":  ",
+        "separator": "|  ",
         "color": {
             "separator": "red"
         },
@@ -21,7 +21,7 @@
     },
     "modules": [
         {
-            "format": "{#1}{#keys}{user-name-colored}{at-symbol-colored}{host-name-colored}",
+            "format": "{#1}{#keys}🦙{user-name-colored}{at-symbol-colored}{host-name-colored}",
             "type": "title"
         },
         {
@@ -67,13 +67,8 @@
             "key": "{#32} memory   ",
             "type": "memory"
         },
-        {
-            "key": "{#31}󰩟 network  ",
-            "type": "localip",
-            "format": "{ipv4} ({ifname})"
-        },
 		{
-            "key": "{#39} colors   ",
+            "key": "{#31} colors   ",
             "type": "colors",
             "symbol": "circle"
         }

@@ -10,18 +10,17 @@ enable_sounds = false
 blur_intensity = 0.99999997764825821
 
 [bar]
-order = [ "default" ]
+order = [ "default", "ubuntu" ]
 
     [bar.default]
-    background_opacity = 0.69999998435378075
     compositor_blur = false
     concave_edge_corners = false
-    end = [ "date", "group:g1" ]
+    end = [ "volume", "session" ]
     font_scale = 1.0999999828636646
-    margin_ends = 850
+    margin_ends = 0
     radius = 0
     scale = 0.90000000596046448
-    start = [ "workspaces", "spacer_2", "custom_button_2", "media" ]
+    start = [ "workspaces", "group:g2" ]
     thickness = 25
 
         [[bar.default.capsule_group]]
@@ -30,10 +29,23 @@ order = [ "default" ]
         border_width = 1.0
         enabled = true
         fill = "surface_variant"
-        id = "g1"
-        members = [ "weather", "volume", "notifications", "network", "session" ]
+        id = "g2"
+        members = [ "settings", "custom_button_2" ]
         opacity = 0.0
         padding = 6.0
+
+    [bar.ubuntu]
+    background_opacity = 0.59999998658895493
+    center = []
+    enabled = true
+    end = [ "launcher" ]
+    margin_ends = 0
+    padding = 13
+    position = "left"
+    radius = 0
+    scale = 1.5500000156462193
+    start = [ "taskbar" ]
+    thickness = 73
 
 [control_center]
 hidden_tabs = [ "monitor", "power" ]
@@ -69,9 +81,12 @@ widget_order = []
 
 [dock]
 background_opacity = 0.69999998435378075
+concave_edge_corners = false
 icon_size = 35
+launcher_position = "start"
 magnification = false
 magnification_scale = 1.2000000029802322
+main_axis_padding = 18
 position = "left"
 radius = 0
 reserve_space = false
@@ -92,6 +107,7 @@ transition_duration = 500
 enabled = true
 schema_version = 2
 widget_order = [
+    "lockscreen-login-box@WL-1",
     "lockscreen-login-box@DP-1",
     "lockscreen-login-box@HDMI-A-2",
     "lockscreen-login-box@HDMI-A-1",
@@ -174,6 +190,34 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 634.0
+    cy = 1186.999755859375
+    output = "WL-1"
+    placement_height = 1369.0
+    placement_width = 1268.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
@@ -289,7 +333,7 @@ enabled = [ "noctalia/bitwarden", "decksters-lab/palette-creator", "noctalia/scr
 avatar_path = "/home/lune/Pictures/icon.jpg"
 button_borders = false
 card_borders = false
-font_family = "Sometype Mono Medium"
+font_family = "Ubuntu Nerd Font"
 input_borders = false
 panel_anchor_bar = "default"
 popup_borders = false
@@ -301,10 +345,10 @@ settings_window_translucent = true
     [shell.launcher]
     category_icons_only = true
     layout = "simple"
-    search_position = "top"
-    width = 560
 
     [shell.panel]
+    border_color = "primary"
+    border_width = 2.0
     borders = false
     control_center_placement = "floating"
     control_center_position = "center"
@@ -350,13 +394,12 @@ settings_window_translucent = true
     variant = "destructive"
 
 [theme]
-builtin = "Nord"
-community_palette = "Murata"
+builtin = "Eldritch"
+community_palette = "Oasis Abyss"
 custom_palette = "Koneko_custom"
 mode = "dark"
 shell_mode = "dark"
-source = "builtin"
-wallpaper_scheme = "faithful"
+source = "community"
 
     [theme.templates]
     builtin_ids = [ "cava", "gtk3", "gtk4", "hyprland", "kitty", "niri", "qt", "umbriel" ]
@@ -370,13 +413,13 @@ transition = [ "disc" ]
     interval_seconds = 1200
 
     [wallpaper.default]
-    path = "/home/lune/Pictures/Wallpapers/amiya_blue.jpg"
+    path = "/home/lune/Pictures/Wallpapers/ubuntu.png"
 
     [wallpaper.last]
-    path = "/home/lune/Pictures/Wallpapers/amiya_blue.jpg"
+    path = "/home/lune/Pictures/Wallpapers/ubuntu.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/lune/Pictures/Wallpapers/amiya_blue.jpg"
+    path = "/home/lune/Pictures/Wallpapers/ubuntu.png"
 
     [wallpaper.monitors.HDMI-A-1]
     path = "/home/lune/Pictures/Wallpapers/amiya2_peach.jpg"
@@ -389,18 +432,18 @@ show_when_idle = true
 
 [widget.clock]
 anchor = true
+format = "{:%b %d   %H:%M}"
 
 [widget.custom_button_2]
-glyph = "music"
-interactive = false
+glyph = ""
+label = "Settings"
 type = "custom_button"
 
-[widget.date]
-format = "{:%d %b %Y}"
-
 [widget.launcher]
-custom_image = "/home/lune/Pictures/arch-linux-logo-1179395631.png"
+color = "on_surface"
 custom_image_colorize = true
+glyph = "grid-dots"
+scale = 2.0
 
 [widget.media]
 anchor = true
@@ -410,22 +453,20 @@ hide_album_art = true
 [widget.network]
 show_label = false
 
-[widget.spacer_2]
-length = 30
-type = "spacer"
-
 [widget.sysmon]
 stat = "gpu_temp"
 
 [widget.taskbar]
-icon_scale = 0.5
-inactive_opacity = 0.55000000000000004
-only_active_workspace = true
+color = "on_surface_variant"
+icon_color = "on_surface_variant"
+icon_scale = 2.0
+item_spacing = 19
 show_workspace_label = false
 workspace_label_placement = "centered"
 
 [widget.tray]
 detached_panel = true
+drawer = true
 
 [widget.volume]
 show_label = false
@@ -436,6 +477,8 @@ show_condition = false
 [widget.workspaces]
 capsule_border = "primary"
 capsule_opacity = 0.0
+focused_color = "on_surface_variant"
 hide_when_empty = true
+occupied_color = "outline"
 pill_scale = 0.5
 show_labels = false
