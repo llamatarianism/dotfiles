@@ -2,23 +2,30 @@ vim.opt.termguicolors = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"
+vim.g.mapleader = " "
 
-vim.pack.add { { src = "https://github.com/RRethy/base16-nvim",          name = "base16-colorscheme" } }
-vim.pack.add { { src = "https://github.com/goolord/alpha-nvim",          name = "alpha"              } }
-vim.pack.add { { src = "https://github.com/catppuccin/nvim",             name = "catppuccin"         } }
-vim.pack.add { { src = "https://github.com/sainnhe/gruvbox-material",    name = "gruvbox-material"   } } 
-vim.pack.add { { src = "https://github.com/norcalli/nvim-colorizer.lua", name = "colorizer"          } }
-vim.pack.add { { src = "https://github.com/m4xshen/autoclose.nvim",      name = "autoclose"          } }
+vim.pack.add { { src = "https://github.com/RRethy/base16-nvim",           name = "base16-colorscheme" } }
+vim.pack.add { { src = "https://github.com/rose-pine/neovim",             name = "rose-pine"          } }
+vim.pack.add { { src = "https://github.com/rktjmp/lush.nvim",             name = "lush"               } }
+vim.pack.add { { src = "https://github.com/zenbones-theme/zenbones.nvim", name = "zenbones"           } }
+vim.pack.add { { src = "https://github.com/anAcc22/sakura.nvim",          name = "sakura"             } }
+vim.pack.add { { src = "https://github.com/brenoprata10/nvim-highlight-colors", name = "nvim-highlight-colors" } }
 
 local dashboard = require("dashboard")
+local pinkybones = require("pinkybones")
 
-require("alpha").setup(dashboard.config)
--- require("catppuccin").setup { flavour = "mocha" }
-require("colorizer").setup()
+require("nvim-highlight-colors").setup {
+	render = "virtual",
+	virtual_symbol = "",
+	virtual_symbol_position = "inline",
+	enable_hex = true,
+	enable_short_hex = true,
+	enable_rgb = true,
+	enable_hsl = true,
+	enable_ansi = true,
+	enable_xterm256 = true,
+	enable_xtermTrueColor = true,
+	exclude_buffer = function(bufnr) end
+}
 
-vim.cmd.colorscheme("gruvbox-material")
-
--- local ok, matugen = pcall(require, 'matugen')
--- if ok then matugen.setup() end
-
-require("autoclose").setup()
+vim.g.zenbones = { darkness = warm }

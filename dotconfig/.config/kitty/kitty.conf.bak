@@ -1,10 +1,11 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # BEGIN_KITTY_FONTS
-font_family      family='Sometype Mono' variable_name=SometypeMono wght=506.9767441860465
+font_family      family='Sometype Mono' variable_name=SometypeMono wght=402.3255813953488
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
+font_size 12
 # END_KITTY_FONTS
 
 #
@@ -3489,6 +3490,6 @@ custom_shaders
 #: }}}
 
 
+
+
 include themes/noctalia.conf
-
-

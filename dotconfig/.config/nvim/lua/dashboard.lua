@@ -13,8 +13,7 @@ local default_terminal = {
 
 local default_header = {
     type = "text",
-    val = { "neovim"
-	},
+	val = "neovim",
     opts = {
         position = "center",
         hl = "Type",
@@ -102,6 +101,29 @@ local config = {
     },
 }
 
+opts = {
+-- Header name, use "random" for a random header
+header = "abstract_portrait",
+
+-- List of headers to exclude
+exclude = {
+	"header_1",
+	"header_2",
+	-- ...
+},
+
+-- Use some default headers
+use_default = true,
+
+-- Path to your custom headers
+
+-- Option 1: Use absolute path
+-- user_path = vim.fn.expand("~/.config/nvim/ascii"),
+
+-- Option 2: Use Neovim's config path
+user_path = vim.fn.stdpath("config") .. "/ascii",
+}
+
 return {
     button = button,
     section = section,
@@ -109,5 +131,5 @@ return {
     -- theme config
     leader = leader,
     -- deprecated
-    opts = config,
+    opts = opts,
 }

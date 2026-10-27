@@ -4,6 +4,14 @@
       "rev": "4ba26e41990c11620c96c0e1cff20eab65efde4a",
       "src": "https://github.com/goolord/alpha-nvim"
     },
+    "alpha-ascii": {
+      "rev": "0d9ee001495caf4e597476aaaca1133f0c444ae6",
+      "src": "https://github.com/nhattVim/alpha-ascii.nvim"
+    },
+    "ascii": {
+      "rev": "70783fea66e99525221e52dce3b3489c05354181",
+      "src": "https://github.com/MaximilianLloyd/ascii.nvim"
+    },
     "autoclose": {
       "rev": "bcad8e84d9cd78ba73433cb396b68e489af11e31",
       "src": "https://github.com/m4xshen/autoclose.nvim"
@@ -25,6 +33,10 @@
       "rev": "a065833f35a3a7cc3ef137ac88b5381da2ba302e",
       "src": "https://github.com/norcalli/nvim-colorizer.lua"
     },
+    "dashboard": {
+      "rev": "f787e3462c2ee2b6117b17c1aa4ddf66cb6f57fe",
+      "src": "https://github.com/nvimdev/dashboard-nvim"
+    },
     "gruvbox": {
       "rev": "154eb5ff5b96d0641307113fa385eaf0d36d9796",
       "src": "https://github.com/ellisonleao/gruvbox.nvim"
@@ -32,6 +44,34 @@
     "gruvbox-material": {
       "rev": "11d779b26a9ab2b3db8c22c6ac9fb6e8ed4fea79",
       "src": "https://github.com/sainnhe/gruvbox-material"
+    },
+    "lush": {
+      "rev": "9c60ec2279d62487d942ce095e49006af28eed6e",
+      "src": "https://github.com/rktjmp/lush.nvim"
+    },
+    "nvim-highlight-colors": {
+      "rev": "e4c7af0211866162d999ce0bdd6a029302e19139",
+      "src": "https://github.com/brenoprata10/nvim-highlight-colors"
+    },
+    "nvim-web-devicons": {
+      "rev": "ec309a0eaff6ea967e58c275996155ab5c16938d",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "rose-pine": {
+      "rev": "ff483051a47e27d84bdef47703538df1ed9f4a47",
+      "src": "https://github.com/rose-pine/neovim"
+    },
+    "sakura": {
+      "rev": "68e2bc88ca6cadf1fa4611cdb1aef3fa6965afb1",
+      "src": "https://github.com/anAcc22/sakura.nvim"
+    },
+    "start": {
+      "rev": "b47fbb6e0da6de077d824b21515464e6c7b43ed8",
+      "src": "https://github.com/amirrezaask/start.nvim"
+    },
+    "zenbones": {
+      "rev": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "src": "https://github.com/zenbones-theme/zenbones.nvim"
     }
   }
 }

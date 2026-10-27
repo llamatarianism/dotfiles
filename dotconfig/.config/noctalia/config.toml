@@ -1,6 +1,479 @@
-[shell]
-# corner_radius_scale = 0 
+[accessibility]
+ui_scale = 1.1000000089406967
 
-[shell.screenshot]
-copy_to_clipboard = true
-save_to_file = false
+[audio]
+enable_sounds = false
+
+[backdrop]
+blur_intensity = 0.99999997764825821
+
+[bar]
+order = [ "default" ]
+
+    [bar.default]
+    background_opacity = 0.69999998435378075
+    compositor_blur = false
+    concave_edge_corners = false
+    end = [ "date", "group:g1" ]
+    font_scale = 1.0999999828636646
+    margin_ends = 850
+    radius = 0
+    scale = 0.90000000596046448
+    start = [ "workspaces", "spacer_2", "custom_button_2", "media" ]
+    thickness = 25
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g1"
+        members = [ "weather", "volume", "notifications", "network", "session" ]
+        opacity = 0.0
+        padding = 6.0
+
+[control_center]
+hidden_tabs = [ "monitor", "power" ]
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "clipboard"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "session"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+background_opacity = 0.69999998435378075
+icon_size = 35
+magnification = false
+magnification_scale = 1.2000000029802322
+position = "left"
+radius = 0
+reserve_space = false
+show_instance_count = false
+
+[hooks]
+started = "~/.config/noctalia/hooks/wallpaper_theme.sh"
+wallpaper_changed = "~/.config/noctalia/hooks/wallpaper_theme.sh"
+
+[location]
+address = "Salisbury, UK"
+
+[lockscreen]
+transition = [ "disc" ]
+transition_duration = 500
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-login-box@WL-1",
+    "lockscreen-login-box@DP-1",
+    "lockscreen-login-box@HDMI-A-2",
+    "lockscreen-login-box@HDMI-A-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000003",
+    "lockscreen-widget-0000000000000004"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 1280.0
+    cy = 848.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "compact"
+        show_caps_lock = true
+        show_keyboard_layout = false
+        show_login_button = true
+        show_media = false
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = false
+        show_weather = false
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 128.0
+    box_width = 810.0
+    cx = 1280.0
+    cy = 816.0
+    output = "HDMI-A-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 1.0
+        background_radius = 0.0
+        center_password_text = true
+        input_opacity = 1.0
+        input_radius = 0.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = false
+        show_media = false
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = false
+        show_weather = false
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1280.0
+    cy = 1258.0
+    output = "HDMI-A-2"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 634.0
+    cy = 1186.999755859375
+    output = "WL-1"
+    placement_height = 1369.0
+    placement_width = 1268.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 176.0
+    box_width = 400.0
+    cx = 1280.0
+    cy = 512.0
+    output = "HDMI-A-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = true
+        background_color = "surface"
+        background_opacity = 0.39000000000000001
+        background_padding = 12
+        background_radius = 0
+        center_text = true
+        clock_style = "digital"
+        color = "primary"
+        font_family = ""
+        format = "{:%H:%M}"
+        shadow = false
+        timezone = ""
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1280.0
+    cy = 608.5
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background_opacity = 0.59999999999999998
+        shadow = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 32.0
+    box_width = 160.0
+    cx = 1376.0
+    cy = 912.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "button"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        background = true
+        command = "reboot"
+        glyph = "reboot"
+        label = "Reboot"
+        variant = "default"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    box_height = 32.0
+    box_width = 160.0
+    cx = 1184.0
+    cy = 912.0
+    output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = -0.0
+    type = "button"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
+        background = true
+        command = "shutdown"
+        glyph = "shutdown"
+        label = "Shutdown"
+        variant = "default"
+
+[notification]
+layer = "overlay"
+
+[plugin_settings."icefish/phone-operate"]
+main_placement = "floating"
+panel_placement = "floating"
+
+[plugin_settings."noctalia/bitwarden"]
+hide_actions_when_searching = true
+server_url = "https://vault.bitwarden.eu"
+
+[plugin_settings."noctalia/umbriel-companion"]
+panel_open_near_click = false
+panel_placement = "floating"
+panel_position = "center"
+
+[plugins]
+enabled = [ "noctalia/bitwarden", "decksters-lab/palette-creator", "noctalia/screen_recorder" ]
+
+[shell]
+avatar_path = "/home/lune/Pictures/icon.jpg"
+button_borders = false
+card_borders = false
+font_family = "Sometype Mono"
+input_borders = false
+panel_anchor_bar = "default"
+popup_borders = false
+settings_window_translucent = true
+
+    [shell.animation]
+    speed = 2.0000000298023224
+
+    [shell.launcher]
+    category_icons_only = true
+    layout = "simple"
+
+    [shell.panel]
+    border_color = "primary"
+    border_width = 2.0
+    borders = false
+    control_center_placement = "floating"
+    control_center_position = "center"
+    session_placement = "floating"
+    session_position = "center"
+    transparency_mode = "soft"
+    wallpaper_placement = "floating"
+    wallpaper_position = "center"
+
+    [shell.screenshot]
+    copy_to_clipboard = true
+    save_to_file = false
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    countdown_seconds = 0.0
+    enabled = false
+    shortcut = "3"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
+
+[theme]
+builtin = "Nord"
+community_palette = "Gruvbox Material"
+custom_palette = "Koneko_custom"
+mode = "dark"
+shell_mode = "dark"
+source = "custom"
+
+    [theme.templates]
+    builtin_ids = [ "cava", "gtk3", "gtk4", "hyprland", "kitty", "niri", "qt", "umbriel" ]
+    community_ids = [ "ytm-player", "pywalfox" ]
+
+        [theme.templates.user.nvim_base16]
+        input_path = "~/.config/nvim/lua/matugen-template.lua"
+        output_path = "~/.config/nvim/lua/matugen.lua"
+        post_hook = "pkill -SIGUSR1 nvim"
+
+[wallpaper]
+directory = "/home/lune/Pictures/Wallpapers"
+transition = [ "disc" ]
+
+    [wallpaper.automation]
+    interval_seconds = 1200
+
+    [wallpaper.default]
+    path = "/home/lune/Pictures/Wallpapers/amiya_pink.jpg"
+
+    [wallpaper.last]
+    path = "/home/lune/Pictures/Wallpapers/amiya_pink.jpg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/lune/Pictures/Wallpapers/amiya_pink.jpg"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/lune/Pictures/Wallpapers/amiya2_peach.jpg"
+
+    [wallpaper.monitors.HDMI-A-2]
+    path = "/home/lune/Pictures/Wallpapers/texas_peach.jpg"
+
+    [[wallpaper.favorite]]
+    path = "/home/lune/Pictures/Wallpapers/amiya2_blue.jpg"
+
+[widget.audio_visualizer]
+show_when_idle = true
+
+[widget.clock]
+anchor = true
+
+[widget.custom_button_2]
+glyph = "music"
+interactive = false
+type = "custom_button"
+
+[widget.date]
+format = "{:%d %b %Y}"
+
+[widget.launcher]
+custom_image = "/home/lune/Pictures/arch-linux-logo-1179395631.png"
+custom_image_colorize = true
+
+[widget.media]
+anchor = true
+artist_first = true
+hide_album_art = true
+
+[widget.network]
+show_label = false
+
+[widget.spacer_2]
+length = 30
+type = "spacer"
+
+[widget.sysmon]
+stat = "gpu_temp"
+
+[widget.taskbar]
+icon_scale = 0.5
+inactive_opacity = 0.55000000000000004
+only_active_workspace = true
+show_workspace_label = false
+workspace_label_placement = "centered"
+
+[widget.tray]
+detached_panel = true
+
+[widget.volume]
+show_label = false
+
+[widget.weather]
+show_condition = false
+
+[widget.workspaces]
+capsule_border = "primary"
+capsule_opacity = 0.0
+hide_when_empty = true
+pill_scale = 0.5
+show_labels = false

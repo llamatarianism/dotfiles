@@ -2,6 +2,7 @@ set -U fish_greeting ""
 set -gx XDG_CONFIG_HOME "$HOME/.config"
 set -gx EDITOR "nvim"
 set -gx VISUAL "nvim"
+set -gx QT_QPA_PLATFORMTHEME "qt6ct"
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -22,10 +23,21 @@ function fish_prompt
 	string join '' -- \n (set_color blue) (set_color --background white) ' 󰣇 ' (set_color black) ' '  (whoami) '  ' (prompt_pwd) ' ' (set_color white) (set_color --background normal) '' $stat
 end
 
+function y
+	set tmp (mktemp -t "yazi-cwd.XXXXXX")
+	command yazi $argv --cwd-file="$tmp"
+	if read -z cwd < "$tmp"; and [ "$cwd" != "$PWD" ]; and test -d "$cwd"
+		builtin cd -- "$cwd"
+	end
+	command rm -f -- "$tmp"
+end
+
+function slayall -a name
+	command killall $name && mpg123 ~/slayall.mp3
+end
+
 alias ll="ls -la"
 alias vim="nvim"
 alias bc="bc -q"
 thefuck --alias | source
-
-# Created by `pipx` on 2026-10-13 21:20:39
-set PATH $PATH /home/lune/.local/bin
+alias wtf="wtfutil"

@@ -1,76 +1,52 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "source": "~/.config/fastfetch/llama.txt",
-        "padding": {
-            "top": 1,
-            "right": 3,
-			"left": 2
-        },
-		"color": { "1": "cyan", "2": "cyan" }
+        "type": "small",
+		"color": { "1": "blue", "2": "blue" },
+		"padding": { "top": 2, "left": 1 }
     },
     "display": {
-        "separator": "|  ",
-        "color": {
-            "separator": "red"
+		"separator": " ",
+        "key": {
+            "width": 13,
+			"type": "both"
         },
-        "constants": [
-         //   "───────────────────────────────────────────────────────────────────────────",
-         //   "│\u001b[75C│\u001b[75D"
-        ]
+        "bar": {
+            "char": {
+                "elapsed": "#",
+                "total": "."
+            },
+            "width": 13
+        },
+        "percent": {
+            "type": 2
+        }
     },
     "modules": [
+		"break",
+        "title",
+		"os",
+		"kernel",
+		"host",
+		"shell",
+		"cpu",
+		"gpu",
+        "memory",
         {
-            "format": "{#1}{#keys}🦙{user-name-colored}{at-symbol-colored}{host-name-colored}",
-            "type": "title"
-        },
-        {
-            "key": "{#31} kernel   ",
-            "type": "kernel"
-        },
-        {
-            "key": "{#32}󰅐 uptime   ",
-            "type": "uptime"
-        },
-        {
-            "key": "{#33}{icon} distro   ",
-            "type": "os"
-        },
-        {
-            "key": "{#34}󰇄 wm       ",
-            "type": "wm"
-        },
-        {
-            "key": "{#35} term     ",
-            "type": "terminal"
-        },
-        {
-            "key": "{#36} shell    ",
-            "type": "shell"
-        },
-        {
-            "key": "{#35}󰍛 cpu      ",
-            "type": "cpu",
-            "showPeCoreCount": true,
-            "temp": true
-        },
-        {
-            "key": "{#34}󰍛 gpu      ",
-            "type": "gpu"
-        },
-        {
-            "key": "{#33}󰉉 disk     ",
             "type": "disk",
             "folders": "/"
         },
         {
-            "key": "{#32} memory   ",
-            "type": "memory"
+            "type": "battery",
+            "key": "Battery"
         },
-		{
-            "key": "{#31} colors   ",
+		"break",
+        {
             "type": "colors",
-            "symbol": "circle"
+			"symbol": "block",
+            "block": {
+				"range": [1,6]
+			}
         }
-	]
+    ]
 }
