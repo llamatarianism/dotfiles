@@ -20,7 +20,7 @@
      base0C = '#e9b096', -- Regex, Escape Chars
      base0D = '#96c8e9', -- Functions, Methods
      base0E = '#96c6e9', -- Keywords, Storage
-     base0F = '#811825', -- Deprecated, Embedded Tags
+     base0F = '#563235', -- Deprecated, Embedded Tags
    }
  end
 

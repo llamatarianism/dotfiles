@@ -3,6 +3,7 @@ set -gx XDG_CONFIG_HOME "$HOME/.config"
 set -gx EDITOR "nvim"
 set -gx VISUAL "nvim"
 set -gx QT_QPA_PLATFORMTHEME "qt6ct"
+set -gx _JAVA_AWT_WM_NONREPARENTING 1
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -41,3 +42,6 @@ alias vim="nvim"
 alias bc="bc -q"
 thefuck --alias | source
 alias wtf="wtfutil"
+
+# Created by `pipx` on 2026-10-31 15:45:18
+set PATH $PATH /home/lune/.local/bin
