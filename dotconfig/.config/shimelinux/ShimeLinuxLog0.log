@@ -1,0 +1,224 @@
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=WalkLeftAlongIEAndSit, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=WalkRightAlongIEAndSit, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=WalkLeftAlongIEAndJump, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=WalkRightAlongIEAndJump, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=DashIeCeilingLeftEdgeFromJump, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=DashIeCeilingRightEdgeFromJump, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=HoldOntoIEWall, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=ClimbIEWall, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=ClimbIEBottom, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=GrabIEBottomLeftWall, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=GrabIEBottomRightWall, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=JumpFromLeftWall, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=JumpFromRightWall, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=JumpOnIELeftWall, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=JumpOnIERightWall, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=ThrowIEFromLeft, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=ThrowIEFromRight, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=WalkAndThrowIEFromRight, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=WalkAndThrowIEFromLeft, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=ChaseMouse, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=null, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=null, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=null, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=null, type=Select, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=SitAndFaceMouse, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=SitAndSpinHead, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=PullUpShimeji1, type=Embedded, className=com.group_finity.mascot.action.Breed]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder <init> Loading animation
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder loadPose Loaded pose: Pose[imageName=/home/lune/.config/shimelinux/img/Pomni/shime1.png, dx=0, dy=0, duration=16, soundName=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder loadPose Loaded pose: Pose[imageName=/home/lune/.config/shimelinux/img/Pomni/shime38.png, dx=0, dy=0, duration=4, soundName=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder loadPose Loaded pose: Pose[imageName=/home/lune/.config/shimelinux/img/Pomni/shime39.png, dx=0, dy=0, duration=40, soundName=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder loadPose Loaded pose: Pose[imageName=/home/lune/.config/shimelinux/img/Pomni/shime40.png, dx=0, dy=0, duration=40, soundName=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder loadPose Loaded pose: Pose[imageName=/home/lune/.config/shimelinux/img/Pomni/shime41.png, dx=0, dy=0, duration=40, soundName=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder <init> Finished loading animation
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=PullUpShimeji2, type=Animate, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder <init> Loading animation
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder loadPose Loaded pose: Pose[imageName=/home/lune/.config/shimelinux/img/Pomni/shime9.png, dx=20, dy=-20, duration=1, soundName=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder loadPose Loaded pose: Pose[imageName=/home/lune/.config/shimelinux/img/Pomni/shime9.png, dx=20, dy=-10, duration=1, soundName=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder loadPose Loaded pose: Pose[imageName=/home/lune/.config/shimelinux/img/Pomni/shime9.png, dx=20, dy=-5, duration=1, soundName=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder <init> Finished loading animation
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=PullUpShimeji, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=PullUp, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=Divide1, type=Embedded, className=com.group_finity.mascot.action.Breed]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder <init> Loading animation
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder loadPose Loaded pose: Pose[imageName=/home/lune/.config/shimelinux/img/Pomni/shime42.png, dx=0, dy=0, duration=5, soundName=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder loadPose Loaded pose: Pose[imageName=/home/lune/.config/shimelinux/img/Pomni/shime43.png, dx=0, dy=0, duration=2, soundName=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder loadPose Loaded pose: Pose[imageName=/home/lune/.config/shimelinux/img/Pomni/shime44.png, dx=0, dy=0, duration=2, soundName=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder loadPose Loaded pose: Pose[imageName=/home/lune/.config/shimelinux/img/Pomni/shime45.png, dx=0, dy=0, duration=5, soundName=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder loadPose Loaded pose: Pose[imageName=/home/lune/.config/shimelinux/img/Pomni/shime46.png, dx=0, dy=0, duration=20, soundName=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.AnimationBuilder <init> Finished loading animation
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=SplitIntoTwo, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Loading action: ActionBuilder[name=Divided, type=Sequence, className=null]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.ActionBuilder <init> Finished loading action
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.Main loadConfiguration Reading behavior file (/home/lune/.config/shimelinux/conf/behaviors.xml)
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.Configuration load Reading configuration file
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.Configuration load Using en-US schema
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.Configuration load Reading behavior list
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=ChaseMouse, frequency=0, actionName=ChaseMouse]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=SitAndFaceMouse, frequency=0, actionName=SitAndFaceMouse]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=SitAndSpinHead, frequency=0, actionName=SitAndSpinHead]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=Fall, frequency=0, actionName=Fall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=Dragged, frequency=0, actionName=Dragged]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=Thrown, frequency=0, actionName=Thrown]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=PullUp, frequency=0, actionName=PullUp]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=Divided, frequency=0, actionName=Divided]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=StandUp, frequency=200, actionName=StandUp]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=SitDown, frequency=200, actionName=SitDown]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=SitWhileDanglingLegs, frequency=0, actionName=SitWhileDanglingLegs]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=LieDown, frequency=0, actionName=LieDown]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=SplitIntoTwo, frequency=50, actionName=SplitIntoTwo]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=HoldOntoWall, frequency=100, actionName=HoldOntoWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=FallFromWall, frequency=50, actionName=FallFromWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=HoldOntoCeiling, frequency=100, actionName=HoldOntoCeiling]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=FallFromCeiling, frequency=50, actionName=FallFromCeiling]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkAlongWorkAreaFloor, frequency=100, actionName=WalkAlongWorkAreaFloor]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=RunAlongWorkAreaFloor, frequency=100, actionName=RunAlongWorkAreaFloor]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=CrawlAlongWorkAreaFloor, frequency=10, actionName=CrawlAlongWorkAreaFloor]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkLeftAlongFloorAndSit, frequency=100, actionName=WalkLeftAlongFloorAndSit]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkRightAlongFloorAndSit, frequency=100, actionName=WalkRightAlongFloorAndSit]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=GrabWorkAreaBottomLeftWall, frequency=100, actionName=GrabWorkAreaBottomLeftWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=GrabWorkAreaBottomRightWall, frequency=100, actionName=GrabWorkAreaBottomRightWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkLeftAndSit, frequency=100, actionName=WalkLeftAndSit]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkRightAndSit, frequency=100, actionName=WalkRightAndSit]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkAndGrabBottomLeftWall, frequency=100, actionName=WalkAndGrabBottomLeftWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkAndGrabBottomRightWall, frequency=100, actionName=WalkAndGrabBottomRightWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=JumpFromBottomOfIE, frequency=50, actionName=JumpFromBottomOfIE]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=PullUpShimeji, frequency=50, actionName=PullUpShimeji]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=ClimbHalfwayAlongWall, frequency=100, actionName=ClimbHalfwayAlongWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=ClimbAlongWall, frequency=100, actionName=ClimbAlongWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=ClimbAlongCeiling, frequency=100, actionName=ClimbAlongCeiling]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkAlongIECeiling, frequency=100, actionName=WalkAlongIECeiling]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=RunAlongIECeiling, frequency=100, actionName=RunAlongIECeiling]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=CrawlAlongIECeiling, frequency=10, actionName=CrawlAlongIECeiling]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=SitOnTheLeftEdgeOfIE, frequency=100, actionName=SitOnTheLeftEdgeOfIE]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=SitOnTheRightEdgeOfIE, frequency=100, actionName=SitOnTheRightEdgeOfIE]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=JumpFromLeftEdgeOfIE, frequency=100, actionName=JumpFromLeftEdgeOfIE]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=JumpFromRightEdgeOfIE, frequency=100, actionName=JumpFromRightEdgeOfIE]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkLeftAlongIEAndSit, frequency=100, actionName=WalkLeftAlongIEAndSit]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkRightAlongIEAndSit, frequency=100, actionName=WalkRightAlongIEAndSit]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkLeftAlongIEAndJump, frequency=100, actionName=WalkLeftAlongIEAndJump]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkRightAlongIEAndJump, frequency=100, actionName=WalkRightAlongIEAndJump]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=HoldOntoIEWall, frequency=100, actionName=HoldOntoIEWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=ClimbIEWall, frequency=100, actionName=ClimbIEWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=ClimbIEBottom, frequency=100, actionName=ClimbIEBottom]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=GrabIEBottomLeftWall, frequency=100, actionName=GrabIEBottomLeftWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=GrabIEBottomRightWall, frequency=100, actionName=GrabIEBottomRightWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=JumpFromLeftWall, frequency=50, actionName=JumpFromLeftWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=JumpFromRightWall, frequency=50, actionName=JumpFromRightWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=JumpOnIELeftWall, frequency=50, actionName=JumpOnIELeftWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=JumpOnIERightWall, frequency=50, actionName=JumpOnIERightWall]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=ThrowIEFromLeft, frequency=20, actionName=ThrowIEFromLeft]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=ThrowIEFromRight, frequency=20, actionName=ThrowIEFromRight]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkAndThrowIEFromRight, frequency=20, actionName=WalkAndThrowIEFromRight]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Loading behavior: BehaviorBuilder[name=WalkAndThrowIEFromLeft, frequency=20, actionName=WalkAndThrowIEFromLeft]
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.config.BehaviorBuilder <init> Finished loading behavior
+30 Oct 2026, 21:20:02 INFO: com.group_finity.mascot.Main createTrayIcon Creating the tray icon
+30 Oct 2026, 21:20:03 INFO: com.group_finity.mascot.Main createMascot Creating a mascot (Pomni)
+30 Oct 2026, 21:20:03 INFO: com.group_finity.mascot.Mascot <init> Created a mascot (Mascot[id=1, imageSet=Pomni])
+30 Oct 2026, 21:20:03 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=Fall])
+30 Oct 2026, 21:20:05 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=Dragged])
+30 Oct 2026, 21:20:06 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=Thrown])
+30 Oct 2026, 21:20:10 INFO: com.group_finity.mascot.behavior.UserBehavior next Completed behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=Thrown])
+30 Oct 2026, 21:20:10 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=ClimbAlongWall])
+30 Oct 2026, 21:20:22 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=Dragged])
+30 Oct 2026, 21:20:23 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=Thrown])
+30 Oct 2026, 21:20:26 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=Dragged])
+30 Oct 2026, 21:20:26 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=Thrown])
+30 Oct 2026, 21:20:28 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=Dragged])
+30 Oct 2026, 21:20:28 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=Thrown])
+30 Oct 2026, 21:20:31 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=Dragged])
+30 Oct 2026, 21:20:46 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=Thrown])
+30 Oct 2026, 21:20:51 INFO: com.group_finity.mascot.behavior.UserBehavior next Completed behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=Thrown])
+30 Oct 2026, 21:20:51 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=ClimbHalfwayAlongWall])
+30 Oct 2026, 21:20:53 INFO: com.group_finity.mascot.behavior.UserBehavior next Completed behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=ClimbHalfwayAlongWall])
+30 Oct 2026, 21:20:53 INFO: com.group_finity.mascot.behavior.UserBehavior init Behavior (Mascot[id=1, imageSet=Pomni], Behavior[name=ClimbHalfwayAlongWall])
