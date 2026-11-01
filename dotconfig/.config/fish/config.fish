@@ -21,7 +21,7 @@ function fish_prompt
 		set stat " " 
 	end
 
-	string join '' -- \n (set_color blue) (set_color --background white) ' 󰣇 ' (set_color black) ' '  (whoami) '  ' (prompt_pwd) ' ' (set_color white) (set_color --background normal) '' $stat
+	string join '' -- \n (set_color blue) (set_color --background white) '  ' (set_color black) ' '  (whoami) '  ' (prompt_pwd) ' ' (set_color white) (set_color --background normal) '' $stat
 end
 
 function y
@@ -40,8 +40,8 @@ end
 alias ll="ls -la"
 alias vim="nvim"
 alias bc="bc -q"
-thefuck --alias | source
 alias wtf="wtfutil"
 
-# Created by `pipx` on 2026-10-31 15:45:18
+
+# Created by `pipx` on 2026-11-01 23:20:31
 set PATH $PATH /home/lune/.local/bin

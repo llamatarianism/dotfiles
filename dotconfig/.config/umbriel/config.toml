@@ -1,6 +1,6 @@
 # Includes
 [include]
-files = ["umbriel-shaders/animation/magic/effect.toml", "umbriel-shaders/animation/old-tv/effect.toml"]
+files = []
 
 [include.optional]
 files = ["cursor.toml", "noctalia.toml"]
@@ -9,7 +9,7 @@ files = ["cursor.toml", "noctalia.toml"]
 # General
 
 [general]
-autostart = ["noctalia", "kitty -1 -e --hold fastfetch", "keyd-application-mapper -dv"]
+autostart = ["noctalia", "kitty -1 -e --hold microfetch", "keyd-application-mapper -dv"]
 show_cheatsheet = false
 
 [appearance]
@@ -178,11 +178,11 @@ default_workspace = 3
 
 [[window_rule]]
 match.app_id = "kitty"
-match.title = "fastfetch"
+match.title = "microfetch"
 match.at_startup = true
 default_floating = true
-default_floating_size_px = { width = 740, height = 320 } # 833x357
-default_position = { x = 150, y = 930, anchor = "top_left" }
+default_floating_size_px = { width = 964, height = 320 } # 833x357
+default_position = { x = 80, y = 1020, anchor = "top_left" }
 default_workspace = 1
 
 [[window_rule]]
