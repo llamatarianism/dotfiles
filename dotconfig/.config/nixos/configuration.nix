@@ -26,11 +26,13 @@
 	  ExecStartPre = "${pkgs.coreutils}/bin/printf '%b' '\\e]P021272C\\e]P7FFFFFF\\ec'";
 	};
   };
+  services.keyd.enable = true;
 
   environment.systemPackages = with pkgs; [
     vim
     wget
     git
+	gcc
     firefox
     kitty
     neovim
@@ -59,10 +61,26 @@
 	pipx
 	ffmpeg
 	imagemagick
+	gowall
+	yazi
+	adw-gtk3
+	bat
+	cowsay
+	cbonsai
+	astroterm
+	pipes
+	asciiquarium
+	peaclock
+	nh
+	inputs.limusic.packages.${pkgs.stdenv.hostPlatform.system}.limusic
+	tree-sitter
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
+  nix.settings = {
+    extra-substituters = [ "https://noctalia.cachix.org" ];
+    extra-trusted-public-keys = [ "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" ];
+  };
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -107,14 +125,15 @@
       noto-fonts-cjk-serif
       noto-fonts-color-emoji
 	  nerd-fonts.sauce-code-pro
+	  cantarell-fonts
 	];
 
 	fontconfig = {
       enable = true;
 	  defaultFonts = {
         emoji = [ "Noto Color Emoji" ];
-        monospace = [ "CommitMono Nerd Font Mono" ];
-        sansSerif = [ "Noto Sans CJK JP" ];
+        monospace = [ "Sometype Mono" ];
+        sansSerif = [ "Cantarell" ];
         serif = [ "Noto Serif CJK JP" ];
       };
 	};
