@@ -1,6 +1,8 @@
 vim.opt.termguicolors = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.softtabstop = 4
 vim.opt.clipboard = "unnamedplus"
 vim.g.mapleader = " "
 
@@ -14,6 +16,8 @@ vim.pack.add { { src = "https://github.com/nvim-treesitter/nvim-treesitter",    
 
 local dashboard = require("dashboard")
 local fen = require("fen")
+
+require("nvim-treesitter").install { "toml", "nix", "lua" }
 
 require("nvim-highlight-colors").setup {
 	render = "background",

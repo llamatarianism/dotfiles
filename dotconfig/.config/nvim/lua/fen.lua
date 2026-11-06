@@ -20,7 +20,7 @@ local base = {
 	fen8 = hsluv "#D97A60",
 	fen9 = hsluv "#D49668",
 	fen10 = hsluv "#D4B071",
-	fen11 = hsluv "#A8C86B",
+	fen11 = hsluv "#B1DfA6",
 	fen12 = hsluv "#75AA99",
 	fen13 = hsluv "#668A94",
 	fen14 = hsluv "#BE8573",
@@ -36,6 +36,9 @@ palette = util.palette_extend({
 	water = base.fen7,
 	blossom = base.fen15,
 	sky = base.fen8,
+    sea = base.fen13,
+    dirt = base.fen4,
+    mustard = base.fen10,
 }, "dark")
 
 
@@ -46,9 +49,13 @@ local base_specs = generator.generate(palette, bg, generator.get_global_config(c
 -- Optionally extend specs using Lush
 local specs = lush.extends({ base_specs }).with(function()
 	return {
-		Statement { base_specs.Statement, fg = palette.rose },
-		Special { fg = palette.water },
+		Statement { base_specs.Statement, fg = palette.wood },
+		Special { fg = palette.sky },
 		Type { fg = palette.sky, gui = "italic" },
+        Identifier { fg = palette.water },
+        String { fg = palette.rose },
+        Number { fg = palette.leaf },
+        Function { fg = palette.mustard },
 	}
 end)
 
