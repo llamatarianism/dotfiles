@@ -1,12 +1,13 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # BEGIN_KITTY_FONTS
-font_family      family='Sometype Mono' variable_name=SometypeMono wght=402.3255813953488
+font_family      family="Sometype Mono"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
-font_size 12
 # END_KITTY_FONTS
+
+font_size 12
 
 #
 
@@ -1532,7 +1533,7 @@ draw_window_borders_for_single_window no
 #: second number is the margin between the tab bar and the contents of
 #: the current tab.
 
-# tab_bar_style fade
+tab_bar_style slant
 
 #: The tab bar style, can be one of:
 
@@ -3492,12 +3493,7 @@ custom_shaders
 
 
 
-include themes/noctalia.conf
 
 
 
 
-# BEGIN_KITTY_THEME
-# neobones_dark
-include current-theme.conf
-# END_KITTY_THEME

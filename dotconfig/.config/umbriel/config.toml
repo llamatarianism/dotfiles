@@ -13,14 +13,12 @@ autostart = ["noctalia", "kitty -1 -e --hold microfetch", "keyd-application-mapp
 show_cheatsheet = false
 
 [appearance]
-corner_radius = 0
+corner_radius = 12
 border_width = 0
 drag_opacity = 0.4
 
 [appearance.blur]
 radius = 3
-
-[appearance.title_bar]
 
 # ==============================================================================
 # Input
@@ -121,10 +119,8 @@ follows_mouse = true
 
 [layout]
 mode = "dwindle"
+gap = 20
 [layout.struts]
-left = 20
-right = 20
-bottom = 20
 
 [output."LG Electronics LG ULTRAGEAR 103NTVSGK735"]
 mode = "2560x1440@144"
@@ -216,6 +212,9 @@ shortcuts = false
 workspace_background = "#ffffff00"
 background_tint = "#ffffff00"
 
+[colors.border]
+focused = "#0c1b26ff"
+unfocused = "#0c1b26ff"
 
 [animation.windows_in]
 style = "zoom"

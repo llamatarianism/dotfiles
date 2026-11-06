@@ -4,6 +4,7 @@ set -gx EDITOR "nvim"
 set -gx VISUAL "nvim"
 set -gx QT_QPA_PLATFORMTHEME "qt6ct"
 set -gx _JAVA_AWT_WM_NONREPARENTING 1
+set -l nixos_version "26.05"
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -38,10 +39,11 @@ function slayall -a name
 end
 
 alias ll="ls -la"
+alias icat="kitten icat"
 alias vim="nvim"
 alias bc="bc -q"
 alias wtf="wtfutil"
-
+alias search="nix-search -c $nixos_version"
 
 # Created by `pipx` on 2026-11-01 23:20:31
 set PATH $PATH /home/lune/.local/bin
