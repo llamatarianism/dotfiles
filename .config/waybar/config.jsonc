@@ -21,7 +21,9 @@
         "clock#date",
         "custom/sep",
         "custom/weather",
+        "custom/sep",
         "pulseaudio",
+        "custom/sep",
         "network",
         "custom/power"
     ],
@@ -62,10 +64,10 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon}",
-        "tooltip-format": "Volume: {volume}%",
+        "format": "vol: {icon}",
+        "tooltip-format": "Volume: {volume}%", // ▒
         "format-icons": {
-            "default": [" ", " ", " ", " "]
+            "default": ["░░░░░░░░░░","▓░░░░░░░░░","▓▓░░░░░░░░","▓▓▓░░░░░░░", "▓▓▓▓░░░░░░","▓▓▓▓▓░░░░░","▓▓▓▓▓▓░░░░","▓▓▓▓▓▓▓░░░","▓▓▓▓▓▓▓▓░░","▓▓▓▓▓▓▓▓▓░","▓▓▓▓▓▓▓▓▓▓"] 
         },
         "on-click": "pavucontrol"
     },
