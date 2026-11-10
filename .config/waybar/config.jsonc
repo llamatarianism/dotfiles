@@ -1,0 +1,114 @@
+// -*- mode: jsonc -*-
+{
+    "on_sigusr1": "reload",
+    "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 30, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "umbriel/workspaces",
+        "umbriel/window"
+    ],
+    "modules-center": [
+        "mpris"
+    ],
+    "modules-right": [
+        "group/tray",
+        "clock",
+        "custom/sep",
+        "clock#date",
+        "custom/sep",
+        "custom/weather",
+        "pulseaudio",
+        "network",
+        "custom/power"
+    ],
+
+    "umbriel/workspaces": {
+        "format": "{index}",
+        "hide-empty": true
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10,
+        // "icons": {
+        //   "blueman": "bluetooth",
+        //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
+        // }
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "format": "{0:%H:%M}"
+    },
+    "clock#date": {
+        "format": "{0:%d %b %Y}"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{icon}",
+        "format-ethernet": "{cidr} 󰊗",
+        "tooltip-format": "{essid}: {signalStrength}%",
+        "format-disconnected": "󰤮 ",
+        "format-icons": ["󰤟 ", "󰤢 ", "󰤥 ", "󰤨 " ]
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon}",
+        "tooltip-format": "Volume: {volume}%",
+        "format-icons": {
+            "default": [" ", " ", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/power": {
+        "format" : " ",
+		"tooltip": false,
+		"menu": "on-click",
+		"menu-actions": {
+			"shutdown": "shutdown",
+			"reboot": "reboot",
+			"suspend": "systemctl suspend",
+			"hibernate": "systemctl hibernate"
+		}
+    },
+    "custom/weather": {
+        "format": "{text}",
+        "exec": "/home/lune/.config/waybar/weather.py",
+        "interval": 120
+    },
+    "image#album-art": {
+        "exec": "~/.config/waybar/album_art.sh",
+        "size": 32,
+        "interval": 30
+    },
+    "mpris": {
+        "format": " {dynamic}",
+        "dynamic-order": ["artist", "title"]
+    },
+    "custom/sep": {
+        "format": "/"
+    },
+    "custom/drawer": {
+        "format": "" 
+    },
+    "group/tray": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/drawer",
+            "tray"
+        ],
+        "drawer": {
+            "click-to-reveal": true,
+            "transition-duration": 100
+        }
+    }
+}

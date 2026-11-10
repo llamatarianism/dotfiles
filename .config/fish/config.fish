@@ -14,10 +14,8 @@ function fish_prompt
 	set -l last_status $status
 	set -l stat
 
-	set -l gruv_white "#fbf1c7"
-
 	if test $last_status -ne 0
-		set stat (set_color "#fb4934")" $last_status  "(set_color --reset)
+		set stat (set_color red)" $last_status  "(set_color --reset)
 	else
 		set stat " " 
 	end

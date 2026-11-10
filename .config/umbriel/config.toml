@@ -9,7 +9,7 @@ files = ["cursor.toml", "noctalia.toml"]
 # General
 
 [general]
-autostart = ["noctalia", "kitty -1 -e --hold microfetch", "keyd-application-mapper -dv"]
+autostart = ["noctalia", "keyd-application-mapper -dv"]
 show_cheatsheet = false
 
 [appearance]
@@ -19,6 +19,8 @@ drag_opacity = 0.4
 
 [appearance.blur]
 radius = 3
+
+[animation]
 
 # ==============================================================================
 # Input
@@ -212,14 +214,8 @@ shortcuts = false
 workspace_background = "#ffffff00"
 background_tint = "#ffffff00"
 
-[colors.border]
-focused = "#0c1b26ff"
-unfocused = "#0c1b26ff"
-
 [animation.windows_in]
-style = "zoom"
+style = "slide"
 
 [animation.windows_out]
 style = "zoom"
-
-
