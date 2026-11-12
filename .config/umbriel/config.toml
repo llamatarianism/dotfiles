@@ -42,8 +42,8 @@ follows_mouse = true
 "Mod"           = { action = "overview-toggle",                                repeat = false }
 "Mod+Q"         = { action = "spawn kitty -1",                                 repeat = false }
 "Mod+C"         = { action = "window-close",                                   repeat = false }
-"Mod+R"         = { action = "spawn noctalia msg panel-toggle launcher",       repeat = false }
-"Mod+D"         = { action = "spawn noctalia msg panel-toggle session",        repeat = false }
+"Mod+R"         = { action = "spawn fuzzel",                                   repeat = false }
+"Mod+D"         = { action = "spawn $HOME/scripts/power_menu.sh",              repeat = false }
 "Mod+E"         = { action = "spawn noctalia msg panel-toggle control-center", repeat = false }
 "Mod+A"         = { action = "spawn noctalia msg panel-toggle clipboard",      repeat = false }
 # "Mod+W"         = { action = "spawn noctalia msg panel-toggle wallpaper",      repeat = false }
@@ -178,6 +178,8 @@ default_workspace = 3
 [[window_rule]]
 match.title = "nsxiv"
 default_floating = true
+default_floating_size_px = { width = 576, height = 600 }
+default_position = { x = 112, y = 0, anchor = "center" }
 
 [[window_rule]]
 match.app_id = "kitty"

@@ -11,28 +11,36 @@
         "umbriel/workspaces",
         "umbriel/window",
         "sway/workspaces",
-        "sway/window"
+        "sway/window",
     ],
     "modules-center": [
         "mpris"
     ],
     "modules-right": [
         "group/tray",
-        "clock",
-        "custom/sep",
-        "clock#date",
-        "custom/sep",
         "custom/weather",
         "custom/sep",
         "pulseaudio",
         "custom/sep",
         "network",
-        "custom/power"
+        "custom/sep",
+        "clock",
+        "custom/sep",
+        "custom/power",
     ],
 
     "umbriel/workspaces": {
         "format": "{index}",
         "hide-empty": true
+    },
+    "umbriel/window": {
+        "format": "{title}",
+        "max-length": 70,
+        "rewrite": {
+            "(.*) — Mozilla Firefox": "󰈹 $1",
+            "(.*) - Discord": " $1",
+            "Limusic": "󰐎 Limusic"
+        }
     },
     "tray": {
         // "icon-size": 21,
@@ -58,20 +66,25 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{icon}",
+        "format-wifi": "sig: {icon}",
         "format-ethernet": "{cidr} 󰊗",
         "tooltip-format": "{essid}: {signalStrength}%",
-        "format-disconnected": "󰤮 ",
-        "format-icons": ["󰤟 ", "󰤢 ", "󰤥 ", "󰤨 " ]
+        "format-disconnected": "󰤮",
+        // "format-icons": [ "󰤟", "󰤢", "󰤥", "󰤨" ]
+        "format-icons": [ "▂░░░", "▂▄░░", "▂▄▆░", "▂▄▆█" ]
+        
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "vol: {icon}",
+        "format-muted": "vol: [  MUTE  ]",
         "tooltip-format": "Volume: {volume}%", // ▒
         "format-icons": {
-            "default": ["░░░░░░░░░░","▓░░░░░░░░░","▓▓░░░░░░░░","▓▓▓░░░░░░░", "▓▓▓▓░░░░░░","▓▓▓▓▓░░░░░","▓▓▓▓▓▓░░░░","▓▓▓▓▓▓▓░░░","▓▓▓▓▓▓▓▓░░","▓▓▓▓▓▓▓▓▓░","▓▓▓▓▓▓▓▓▓▓"] 
+           "default": ["░░░░░░░░░░","▓░░░░░░░░░","▓▓░░░░░░░░","▓▓▓░░░░░░░", "▓▓▓▓░░░░░░","▓▓▓▓▓░░░░░","▓▓▓▓▓▓░░░░","▓▓▓▓▓▓▓░░░","▓▓▓▓▓▓▓▓░░","▓▓▓▓▓▓▓▓▓░","▓▓▓▓▓▓▓▓▓▓"] 
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
+        "on-click-right": "pactl set-sink-mute 0 toggle",
+        "scroll-step": 2
     },
     "custom/power": {
         "format" : " ",
@@ -96,7 +109,8 @@
     },
     "mpris": {
         "format": " {dynamic}",
-        "dynamic-order": ["artist", "title"]
+        "dynamic-order": ["artist", "title"],
+        "max-length": 100
     },
     "custom/sep": {
         "format": "/"

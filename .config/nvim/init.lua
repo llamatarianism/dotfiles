@@ -46,4 +46,5 @@ require("nvim-highlight-colors").setup {
 	exclude_buffer = function(bufnr) end
 }
 
-vim.g.zenbones = { darkness = warm }
+vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
+vim.keymap.set('n', '<leader>q', '<CMD>lua require("FTerm").toggle()<CR>')
