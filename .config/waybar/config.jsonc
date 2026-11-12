@@ -66,21 +66,19 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "sig: {icon}",
+        "format-wifi": "{icon}",
         "format-ethernet": "{cidr} 󰊗",
         "tooltip-format": "{essid}: {signalStrength}%",
         "format-disconnected": "󰤮",
-        // "format-icons": [ "󰤟", "󰤢", "󰤥", "󰤨" ]
-        "format-icons": [ "▂░░░", "▂▄░░", "▂▄▆░", "▂▄▆█" ]
+        "format-icons": [ "󰤟", "󰤢", "󰤥", "󰤨" ]
         
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "vol: {icon}",
+        "format": "{icon}",
         "format-muted": "vol: [  MUTE  ]",
         "tooltip-format": "Volume: {volume}%", // ▒
         "format-icons": {
-           "default": ["░░░░░░░░░░","▓░░░░░░░░░","▓▓░░░░░░░░","▓▓▓░░░░░░░", "▓▓▓▓░░░░░░","▓▓▓▓▓░░░░░","▓▓▓▓▓▓░░░░","▓▓▓▓▓▓▓░░░","▓▓▓▓▓▓▓▓░░","▓▓▓▓▓▓▓▓▓░","▓▓▓▓▓▓▓▓▓▓"] 
+           "default": [ "", "", "", "" ]
         },
         "on-click": "pavucontrol",
         "on-click-right": "pactl set-sink-mute 0 toggle",
