@@ -1,3 +1,6 @@
+/* @import "/home/lune/.cache/wal/colors-waybar.css"; */
+
+@import "/home/lune/.config/waybar/gruvbox-light.css";
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Sometype Mono, FontAwesome;
@@ -5,9 +8,9 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 1.0);
-    border-top: 3px solid rgba(100, 114, 125, 1);
-    color: #ffffff;
+    background-color: @bg;
+    border-top: 3px solid @bg_h;
+    color: @fg;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -45,7 +48,7 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 3px 0 0 #ffffff;
+    box-shadow: inset 0 3px 0 0 @aqua-dim;
 }
 
 /* you can set a style on hover for any module like this */
@@ -55,7 +58,7 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ffffff;
+    color: @fg;
 }
 
 #workspaces button:hover {
@@ -63,8 +66,9 @@ button:hover {
 }
 
 #workspaces button.focused, #workspaces button.active {
-    background-color: #64727D;
-    box-shadow: inset 0 3px 0 0 #ffffff;
+    color: @bg;
+    background-color: @aqua;
+    box-shadow: inset 0 3px 0 0 @aqua-dim;
 }
 
 #workspaces button.urgent {
@@ -73,7 +77,7 @@ button:hover {
 
 #mode {
     background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -3px @fg;
 }
 
 #clock,
@@ -94,7 +98,7 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 4px;
-    color: #ffffff;
+    color: @fg;
 }
 
 #window,
@@ -112,22 +116,20 @@ button:hover {
     margin-right: 0;
 }
 
-#clock {
-}
 
 #battery {
-    background-color: #ffffff;
+    background-color: @fg;
     color: #000000;
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
+    color: @fg;
     background-color: #26A65B;
 }
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
+        background-color: @fg;
         color: #000000;
     }
 }
@@ -135,7 +137,7 @@ button:hover {
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
-    color: #ffffff;
+    color: @fg;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -149,12 +151,12 @@ button:hover {
 
 #power-profiles-daemon.performance {
     background-color: #f53c3c;
-    color: #ffffff;
+    color: @fg;
 }
 
 #power-profiles-daemon.balanced {
     background-color: #2980b9;
-    color: #ffffff;
+    color: @fg;
 }
 
 #power-profiles-daemon.power-saver {
@@ -183,18 +185,12 @@ label:focus {
     background-color: #90b1b1;
 }
 
-#network {
-}
 
 #network.disconnected {
     background-color: #f53c3c;
 }
 
-#pulseaudio {
-}
 
-#pulseaudio.muted {
-}
 
 #wireplumber {
     background-color: #fff0f5;
@@ -266,7 +262,7 @@ label:focus {
 }
 
 #mpris.paused {
-    color: #999999;
+    color: @fg4;
 }
 
 #language {
@@ -325,3 +321,34 @@ label:focus {
 #privacy-item.location {
     background-color: #00afff;
 }
+/*
+#clock {
+    color: @bg;
+    background-color: @red-dim;
+}
+
+#pulseaudio {
+    color: @bg;
+    background-color: @green-dim;
+}
+
+#pulseaudio.muted {
+}
+
+#network {
+    color: @bg;
+    margin-right: 6px;
+    background-color: @blue-dim;
+}
+
+#custom-power {
+    color: @bg;
+    background-color: @purple-dim;
+}
+
+#custom-weather {
+    background-color: @yellow-dim;
+    color: @bg;
+}
+
+*/

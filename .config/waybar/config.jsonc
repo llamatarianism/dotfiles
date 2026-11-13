@@ -18,15 +18,13 @@
     ],
     "modules-right": [
         "group/tray",
+        "clock",
+        "custom/sep",
         "custom/weather",
         "custom/sep",
         "pulseaudio",
-        "custom/sep",
         "network",
-        "custom/sep",
-        "clock",
-        "custom/sep",
-        "custom/power",
+        "custom/power"
     ],
 
     "umbriel/workspaces": {
@@ -39,7 +37,8 @@
         "rewrite": {
             "(.*) — Mozilla Firefox": "󰈹 $1",
             "(.*) - Discord": " $1",
-            "Limusic": "󰐎 Limusic"
+            "Limusic": "󰐎 Limusic",
+            "vim (.*)": " $1"
         }
     },
     "tray": {
@@ -52,7 +51,8 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "format": "{0:%H:%M}"
+        "format": "{0:%H:%M}",
+        "format-alt": "{0:%d %b %Y}"
     },
     "clock#date": {
         "format": "{0:%d %b %Y}"
@@ -86,14 +86,7 @@
     },
     "custom/power": {
         "format" : " ",
-		"tooltip": false,
-		"menu": "on-click",
-		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
-		}
+        "on-click": "$HOME/scripts/power_menu.sh"
     },
     "custom/weather": {
         "format": "{text}",

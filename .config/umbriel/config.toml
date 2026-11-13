@@ -9,7 +9,7 @@ files = ["cursor.toml", "noctalia.toml"]
 # General
 
 [general]
-autostart = ["noctalia", "keyd-application-mapper -dv"]
+autostart = ["waybar", "mako", "keyd-application-mapper -dv", "bw serve --hostname 127.0.0.1 --port 8087"]
 show_cheatsheet = false
 
 [appearance]
@@ -45,18 +45,22 @@ follows_mouse = true
 "Mod+R"         = { action = "spawn $HOME/scripts/launcher.sh",                repeat = false }
 "Mod+D"         = { action = "spawn $HOME/scripts/power_menu.sh",              repeat = false }
 "Mod+E"         = { action = "spawn $HOME/scripts/quick_edit.sh",              repeat = false }
+"Mod+Y"         = { action = "spawn kitty -e yazi",                            repeat = false }
 "Mod+A"         = { action = "spawn noctalia msg panel-toggle clipboard",      repeat = false }
 # "Mod+W"         = { action = "spawn noctalia msg panel-toggle wallpaper",      repeat = false }
 "Mod+W"         = { action = "spawn $HOME/scripts/wallpaper_selector.sh",      repeat = false }
 "Mod+Shift+W"   = { action = "spawn noctalia msg wallpaper-next",        repeat = false }
 "Mod+WheelUp"   = { action = "workspace-previous", cooldown_ms = 150 }
 "Mod+WheelDown" = { action = "workspace-next", cooldown_ms = 150 }
-"Mod+L"         = "spawn noctalia msg session lock"
+"Mod+L"         = "spawn swaylock" 
 
 # Screenshots
 
-"Mod+S"       = { action = "spawn noctalia msg screenshot-fullscreen", repeat = false } 
-"Mod+Shift+S" = { action = "spawn noctalia msg screenshot-region",     repeat = false } 
+# "Mod+S"       = { action = "spawn noctalia msg screenshot-fullscreen", repeat = false } 
+# "Mod+Shift+S" = { action = "spawn noctalia msg screenshot-region",     repeat = false } 
+
+"Mod+S"       = { action = "spawn $HOME/scripts/screenshot.sh",   repeat = false } 
+"Mod+Shift+S" = { action = "spawn $HOME/scripts/screenshot.sh 1", repeat = false } 
 
 # Media controls
 "Mod+Tab"       = "spawn playerctl next"
