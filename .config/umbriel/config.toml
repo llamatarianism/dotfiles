@@ -53,6 +53,7 @@ follows_mouse = true
 "Mod+WheelUp"   = { action = "workspace-previous", cooldown_ms = 150 }
 "Mod+WheelDown" = { action = "workspace-next", cooldown_ms = 150 }
 "Mod+L"         = "spawn swaylock" 
+"Mod+P"         = { action = "spawn $HOME/scripts/bitwarden.sh",               repeat = false }
 
 # Screenshots
 
@@ -86,7 +87,6 @@ follows_mouse = true
 # Window state and layout
 "Mod+V" = { action = "window-toggle-floating", repeat = false }
 "Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }
-"Mod+P" = { action = "window-toggle-pinned", repeat = false }
 "Mod+M" = { action = "window-toggle-maximize-to-edges", repeat = false }
 "Mod+F" = { action = "window-toggle-fullscreen", repeat = false }
 "Mod+Ctrl+F" = { action = "window-toggle-maximize", repeat = false }

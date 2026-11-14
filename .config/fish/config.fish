@@ -41,7 +41,7 @@ alias icat="kitten icat"
 alias vim="nvim"
 alias bc="bc -q"
 alias wtf="wtfutil"
-alias search="nix-search -c $nixos_version"
+alias search="nix-search"
 
 # Created by `pipx` on 2026-11-01 23:20:31
 set PATH $PATH /home/lune/.local/bin
