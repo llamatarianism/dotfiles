@@ -18,6 +18,7 @@ vim.pack.add { { src = "https://github.com/nvim-tree/nvim-tree.lua",      name =
 vim.pack.add { { src = "https://github.com/numToStr/FTerm.nvim",          name = "FTerm.nvim"         } }
 vim.pack.add { { src = "https://github.com/brenoprata10/nvim-highlight-colors", name = "nvim-highlight-colors" } }
 vim.pack.add { { src = "https://github.com/nvim-treesitter/nvim-treesitter",    name = "nvim-treesitter" } }
+vim.pack.add { { src = "https://github.com/sainnhe/gruvbox-material",           name = "gruvbox-material" } }
 
 local dashboard = require("dashboard")
 local fen = require("fen")
@@ -46,5 +47,12 @@ require("nvim-highlight-colors").setup {
 	exclude_buffer = function(bufnr) end
 }
 
+vim.g.gruvbox_material_better_performance = 1
+vim.g.gruvbox_material_background = "hard"
+vim.g.gruvbox_material_foreground = "mix" -- material, original
+
+vim.cmd("colorscheme gruvbox-material")
+
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
 vim.keymap.set('n', '<leader>q', '<CMD>lua require("FTerm").toggle()<CR>')
+

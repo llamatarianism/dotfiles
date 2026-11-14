@@ -1,7 +1,7 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # BEGIN_KITTY_FONTS
-font_family      family="Red Hat Mono"
+font_family      family="Sometype Mono"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
@@ -56,6 +56,8 @@ font_size 14
 # symbol_map
 
 #: E.g. symbol_map U+E0A0-U+E0A3,U+E0C0-U+E0C7 PowerlineSymbols
+
+symbol_map U+E843 SauceCodePro Nerd Font Propo 
 
 #: Map the specified Unicode codepoints to a particular font. Useful
 #: if you need special rendering for some symbols, such as for
@@ -3500,3 +3502,9 @@ custom_shaders
 
 
 include themes/noctalia.conf
+
+
+# BEGIN_KITTY_THEME
+# Gruvbox Dark
+include current-theme.conf
+# END_KITTY_THEME

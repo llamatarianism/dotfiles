@@ -15,12 +15,12 @@ function fish_prompt
 	set -l stat
 
 	if test $last_status -ne 0
-		set stat (set_color red)" $last_status  "(set_color --reset)
+		set stat (set_color brred)" $last_status  "(set_color --reset)
 	else
 		set stat " " 
 	end
 
-	string join '' -- \n (set_color blue) (set_color --background white) '  ' (set_color black) ' '  (whoami) '  ' (prompt_pwd) ' ' (set_color white) (set_color --background normal) '' $stat
+	string join '' -- \n (set_color blue) (set_color --background brwhite) '  ' (set_color black) ' '  (whoami) '  ' (prompt_pwd) ' ' (set_color brwhite) (set_color --background normal) '' $stat
 end
 
 function y
