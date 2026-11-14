@@ -115,11 +115,15 @@
         "orientation": "horizontal",
         "modules": [
             "custom/drawer",
-            "tray"
+            "tray",
         ],
         "drawer": {
             "click-to-reveal": true,
             "transition-duration": 100
         }
+    },
+    "custom/notifs": {
+        "on-click": "/home/lune/.config/waybar/notif_history.sh",
+        "format": "",
     }
 }

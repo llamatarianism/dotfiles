@@ -20,7 +20,11 @@ drag_opacity = 0.4
 [appearance.blur]
 radius = 3
 
-[animation]
+[animation.beziers]
+md3_standard = [0.2,  0.0, 0.0, 1.0]
+md3_decel    = [0.05, 0.7, 0.1, 1.0]
+md3_accel    = [0.3,  0.0, 0.8, 0.15]
+
 
 # ==============================================================================
 # Input
@@ -226,7 +230,23 @@ workspace_background = "#ffffff00"
 background_tint = "#ffffff00"
 
 [animation.windows_in]
-style = "slide"
+style = "zoom"
+curve = "md3_decel"
+duration_ms = 300
+scale = 0.85
 
 [animation.windows_out]
-style = "zoom"
+curve = "md3_accel"
+duration_ms = 150
+
+[animation.windows_move]
+curve = "md3_standard"
+duration_ms = 200
+
+[animation.workspaces]
+curve = "md3_standard"
+duration_ms = 300
+
+[animation.layers]
+curve = "md3_decel"
+duration_ms = 300
