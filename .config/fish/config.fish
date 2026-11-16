@@ -2,6 +2,7 @@ set -U fish_greeting ""
 set -gx XDG_CONFIG_HOME "$HOME/.config"
 set -gx EDITOR "nvim"
 set -gx VISUAL "nvim"
+set -gx TERM   "kitty"
 set -gx QT_QPA_PLATFORMTHEME "qt6ct"
 set -gx _JAVA_AWT_WM_NONREPARENTING 1
 set -l nixos_version "26.05"

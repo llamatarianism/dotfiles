@@ -9,7 +9,7 @@ files = ["cursor.toml", "noctalia.toml"]
 # General
 
 [general]
-autostart = ["waybar", "mako", "keyd-application-mapper -dv", "bw serve --hostname 127.0.0.1 --port 8087"]
+autostart = ["waybar", "mako", "keyd-application-mapper -dv", "bw serve --hostname 127.0.0.1 --port 8087", "$HOME/scripts/wallpaper_random.sh"]
 show_cheatsheet = false
 
 [appearance]
@@ -34,7 +34,7 @@ layout = "gb"
 options = ""
 
 [input.focus]
-follows_mouse = true
+follows_mouse = "sloppy"
 
 [input.cursor]
 # cursor plugin: theme = "HypnOS"
