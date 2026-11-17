@@ -6,11 +6,6 @@ vim.opt.softtabstop = 4
 vim.opt.clipboard = "unnamedplus"
 vim.g.mapleader = " "
 
-vim.pack.add { { src = "https://github.com/RRethy/base16-nvim",           name = "base16-colorscheme" } }
-vim.pack.add { { src = "https://github.com/rose-pine/neovim",             name = "rose-pine"          } }
-vim.pack.add { { src = "https://github.com/rktjmp/lush.nvim",             name = "lush"               } }
-vim.pack.add { { src = "https://github.com/zenbones-theme/zenbones.nvim", name = "zenbones"           } }
-vim.pack.add { { src = "https://github.com/anAcc22/sakura.nvim",          name = "sakura"             } }
 vim.pack.add { { src = "https://github.com/nvim-lualine/lualine.nvim",    name = "lualine.nvim"       } }
 vim.pack.add { { src = "https://github.com/nvim-tree/nvim-web-devicons",  name = "nvim-web-devicons"  } }
 vim.pack.add { { src = "https://github.com/windwp/nvim-autopairs",        name = "nvim-autopairs"     } }
@@ -20,8 +15,6 @@ vim.pack.add { { src = "https://github.com/brenoprata10/nvim-highlight-colors", 
 vim.pack.add { { src = "https://github.com/nvim-treesitter/nvim-treesitter",    name = "nvim-treesitter" } }
 vim.pack.add { { src = "https://github.com/sainnhe/gruvbox-material",           name = "gruvbox-material" } }
 
-local dashboard = require("dashboard")
-local fen = require("fen")
 
 require("nvim-treesitter").install { "toml", "nix", "lua", "yuck", "scss" }
 
@@ -32,8 +25,10 @@ require("nvim-autopairs").setup()
 require("nvim-tree").setup()
 
 require("FTerm").setup({
-    border = "double",
+    border = 'rounded',
 })
+
+vim.api.nvim_set_hl(0, "FloatBorder", { bg = "NONE" })
 
 require("nvim-highlight-colors").setup {
 	render = "background",

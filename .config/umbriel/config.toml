@@ -9,7 +9,7 @@ files = ["cursor.toml", "noctalia.toml"]
 # General
 
 [general]
-autostart = ["waybar", "mako", "keyd-application-mapper -dv", "bw serve --hostname 127.0.0.1 --port 8087", "$HOME/scripts/wallpaper_random.sh"]
+autostart = ["waybar", "mako", "keyd-application-mapper -dv", "bw serve --hostname 127.0.0.1 --port 8087", "$HOME/scripts/wallpaper_random.sh", "foot --server"]
 show_cheatsheet = false
 
 [appearance]
@@ -44,12 +44,12 @@ follows_mouse = "sloppy"
 
 # Applications and session
 "Mod"           = { action = "overview-toggle",                                repeat = false }
-"Mod+Q"         = { action = "spawn kitty -1",                                 repeat = false }
+"Mod+Q"         = { action = "spawn footclient",                               repeat = false }
 "Mod+C"         = { action = "window-close",                                   repeat = false }
 "Mod+R"         = { action = "spawn $HOME/scripts/launcher.sh",                repeat = false }
 "Mod+D"         = { action = "spawn $HOME/scripts/power_menu.sh",              repeat = false }
 "Mod+E"         = { action = "spawn $HOME/scripts/quick_edit.sh",              repeat = false }
-"Mod+Y"         = { action = "spawn kitty -e yazi",                            repeat = false }
+"Mod+Y"         = { action = "spawn foot -e yazi",                            repeat = false }
 "Mod+A"         = { action = "spawn noctalia msg panel-toggle clipboard",      repeat = false }
 # "Mod+W"         = { action = "spawn noctalia msg panel-toggle wallpaper",      repeat = false }
 "Mod+W"         = { action = "spawn $HOME/scripts/wallpaper_selector.sh",      repeat = false }

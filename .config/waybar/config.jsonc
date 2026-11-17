@@ -10,8 +10,6 @@
     "modules-left": [
         "umbriel/workspaces",
         "umbriel/window",
-        "sway/workspaces",
-        "sway/window",
     ],
     "modules-center": [
         "mpris"
@@ -39,7 +37,9 @@
             "(.*) - Discord": " $1",
             "(.*) – GIMP": " $1",
             "Limusic": "󰐎 Limusic",
-            "vim (.*)": " $1"
+            "vim (.*)": " $1",
+            "Steam": " Steam",
+            "Steam (.*)" : " $1"
         }
     },
     "tray": {

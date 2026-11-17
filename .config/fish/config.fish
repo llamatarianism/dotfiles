@@ -2,7 +2,7 @@ set -U fish_greeting ""
 set -gx XDG_CONFIG_HOME "$HOME/.config"
 set -gx EDITOR "nvim"
 set -gx VISUAL "nvim"
-set -gx TERM   "kitty"
+set -gx TERM   "foot"
 set -gx QT_QPA_PLATFORMTHEME "qt6ct"
 set -gx _JAVA_AWT_WM_NONREPARENTING 1
 set -l nixos_version "26.05"
@@ -37,12 +37,13 @@ function slayall -a name
 	command killall $name && mpg123 ~/slayall.mp3
 end
 
+function mkcd -a name
+    command mkdir $name && cd $name
+end
+
 alias ll="ls -la"
 alias icat="kitten icat"
 alias vim="nvim"
 alias bc="bc -q"
 alias wtf="wtfutil"
 alias search="nix-search"
-
-# Created by `pipx` on 2026-11-01 23:20:31
-set PATH $PATH /home/lune/.local/bin
