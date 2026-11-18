@@ -1,0 +1,252 @@
+# Includes
+[include]
+files = []
+
+[include.optional]
+files = ["cursor.toml", "noctalia.toml"]
+
+# ==============================================================================
+# General
+
+[general]
+autostart = ["waybar", "mako", "keyd-application-mapper -dv", "bw serve --hostname 127.0.0.1 --port 8087", "$HOME/scripts/wallpaper_random.sh", "foot --server"]
+show_cheatsheet = false
+
+[appearance]
+corner_radius = 12
+border_width = 0
+drag_opacity = 0.4
+
+[appearance.blur]
+radius = 3
+
+[animation.beziers]
+md3_standard = [0.2,  0.0, 0.0, 1.0]
+md3_decel    = [0.05, 0.7, 0.1, 1.0]
+md3_accel    = [0.3,  0.0, 0.8, 0.15]
+
+
+# ==============================================================================
+# Input
+
+[input.keyboard]
+layout = "gb"
+options = ""
+
+[input.focus]
+follows_mouse = "sloppy"
+
+[input.cursor]
+# cursor plugin: theme = "HypnOS"
+
+# ==============================================================================
+[keybinds]
+
+# Applications and session
+"Mod"           = { action = "overview-toggle",                                repeat = false }
+"Mod+Q"         = { action = "spawn footclient",                               repeat = false }
+"Mod+C"         = { action = "window-close",                                   repeat = false }
+"Mod+R"         = { action = "spawn $HOME/scripts/launcher.sh",                repeat = false }
+"Mod+D"         = { action = "spawn $HOME/scripts/power_menu.sh",              repeat = false }
+"Mod+E"         = { action = "spawn $HOME/scripts/quick_edit.sh",              repeat = false }
+"Mod+Y"         = { action = "spawn foot -e yazi",                            repeat = false }
+"Mod+A"         = { action = "spawn noctalia msg panel-toggle clipboard",      repeat = false }
+# "Mod+W"         = { action = "spawn noctalia msg panel-toggle wallpaper",      repeat = false }
+"Mod+W"         = { action = "spawn $HOME/scripts/wallpaper_selector.sh",      repeat = false }
+"Mod+Shift+W"   = { action = "spawn $HOME/scripts/wallpaper_random.sh",        repeat = false }
+"Mod+WheelUp"   = { action = "workspace-previous", cooldown_ms = 150 }
+"Mod+WheelDown" = { action = "workspace-next", cooldown_ms = 150 }
+"Mod+L"         = "spawn swaylock" 
+"Mod+P"         = { action = "spawn $HOME/scripts/bitwarden_server.sh",        repeat = false }
+
+# Screenshots
+
+# "Mod+S"       = { action = "spawn noctalia msg screenshot-fullscreen", repeat = false } 
+# "Mod+Shift+S" = { action = "spawn noctalia msg screenshot-region",     repeat = false } 
+
+"Mod+S"       = { action = "spawn $HOME/scripts/screenshot.sh",   repeat = false } 
+"Mod+Shift+S" = { action = "spawn $HOME/scripts/screenshot.sh 1", repeat = false } 
+
+# Media controls
+"Mod+Tab"       = "spawn playerctl next"
+"Mod+Backspace" = "spawn playerctl previous"
+"Mod+Space"     = "spawn playerctl play-pause"
+
+
+
+"Mod+Alt+Right" = "column-focus-tab-next"
+"Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+
+# Focus and movement
+"Mod+Left" = "window-focus-left"
+"Mod+Down" = "window-focus-down"
+"Mod+Up" = "window-focus-up"
+
+"Mod+F1" = "window-focus-next"
+"Mod+Shift+Left" = "column-move-left"
+"Mod+Shift+Down" = "window-move-down"
+"Mod+Shift+Up" = "window-move-up"
+"Mod+Shift+Right" = "column-move-right"
+
+# Window state and layout
+"Mod+V" = { action = "window-toggle-floating", repeat = false }
+"Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }
+"Mod+M" = { action = "window-toggle-maximize-to-edges", repeat = false }
+"Mod+F" = { action = "window-toggle-fullscreen", repeat = false }
+"Mod+Ctrl+F" = { action = "window-toggle-maximize", repeat = false }
+# "Mod+R" = "window-cycle-primary-extent"
+"Mod+Shift+R" = "window-cycle-primary-extent-back"
+"Mod+Comma" = "window-consume-left"
+"Mod+Period" = "window-consume-right"
+"Mod+Ctrl+Comma" = "window-consume-from-left"
+"Mod+Ctrl+Period" = "window-consume-from-right"
+# "Mod+W" = { action = "column-toggle-tabbed", repeat = false }
+"Mod+Alt+Left" = "column-focus-tab-previous"
+"Mod+J" = "window-swap-next"
+
+# Workspaces
+"Mod+1" = "workspace-switch 1"
+"Mod+2" = "workspace-switch 2"
+"Mod+3" = "workspace-switch 3"
+"Mod+4" = "workspace-switch 4"
+"Mod+5" = "workspace-switch 5"
+"Mod+6" = "workspace-switch 6"
+"Mod+7" = "workspace-switch 7"
+"Mod+8" = "workspace-switch 8"
+"Mod+9" = "workspace-switch 9"
+"Mod+Shift+1" = "window-move-to-workspace 1"
+"Mod+Shift+2" = "window-move-to-workspace 2"
+"Mod+Shift+3" = "window-move-to-workspace 3"
+"Mod+Shift+4" = "window-move-to-workspace 4"
+"Mod+Shift+5" = "window-move-to-workspace 5"
+"Mod+Shift+6" = "window-move-to-workspace 6"
+"Mod+Shift+7" = "window-move-to-workspace 7"
+"Mod+Shift+8" = "window-move-to-workspace 8"
+"Mod+Shift+9" = "window-move-to-workspace 9"
+
+# Scratchpad
+# ==============================================================================
+# Layout
+
+[layout]
+mode = "dwindle"
+gap = 20
+[layout.struts]
+
+[output."LG Electronics LG ULTRAGEAR 103NTVSGK735"]
+mode = "2560x1440@144"
+workspace_axis = "horizontal"
+min_workspaces = 3
+
+[layout.dwindle]
+new_toward_cursor = true
+
+[layout.scrolling]
+default_extent_fraction = 0.5
+
+# ==============================================================================
+# Window rules
+
+
+[[window_rule]]
+blur = true
+blur_optimized = false
+
+[[window_rule]]
+match.app_id = "^dev.noctalia.Noctalia$"
+default_floating = true
+default_floating_size_px = { width = 1020, height = 900 }
+
+[[window_rule]]
+match.app_id = "^dev.noctalia.UmbrielSharePicker$"
+default_floating = true
+default_floating_size_px = { width = 800, height = 600 }
+
+[[window_rule]]
+match.title = "^(Picture-in-Picture|Picture in picture)$"
+default_floating = true
+default_maximize = false
+default_position = { x = 20, y = 20, anchor = "bottom_right" }
+
+[[window_rule]]
+match.title = "^notificationtoasts_.+_desktop"
+default_position = { x = 0, y = 0, anchor = "bottom_right" }
+default_focused = false
+default_pinned = true
+
+[[window_rule]]
+match.app_id = "steam"
+default_floating = true
+
+[[window_rule]]
+match.title = "Steam"
+default_floating = false
+default_workspace = 3
+
+[[window_rule]]
+match.title = "nsxiv"
+default_floating = true
+default_floating_size_px = { width = 576, height = 600 }
+default_position = { x = 112, y = 0, anchor = "center" }
+
+[[window_rule]]
+match.app_id = "kitty"
+match.title = "microfetch"
+match.at_startup = true
+default_floating = true
+default_floating_size_px = { width = 964, height = 320 } # 833x357
+default_position = { x = 80, y = 1020, anchor = "top_left" }
+default_workspace = 1
+
+[[window_rule]]
+match.app_id = "com-group_finity-mascot-Main"
+default_floating = true
+
+
+# ==============================================================================
+# Layer rules
+[[layer_rule]]
+match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
+blur = true
+blur_ignore_alpha = 0.5
+blur_popups = true
+blur_optimized = false
+
+
+# ==============================================================================
+# Overview
+[hot_corners.top_left]
+enabled = true
+delay_ms = 250
+action = "spawn noctalia msg plugin noctalia/screen_recorder:service all toggle"
+
+[overview]
+background_blur = false 
+workspace_wallpaper = false
+shortcuts = false
+
+[colors.overview]
+workspace_background = "#ffffff00"
+background_tint = "#ffffff00"
+
+[animation.windows_in]
+style = "zoom"
+curve = "md3_decel"
+duration_ms = 300
+scale = 0.85
+
+[animation.windows_out]
+curve = "md3_accel"
+duration_ms = 150
+
+[animation.windows_move]
+curve = "md3_standard"
+duration_ms = 200
+
+[animation.workspaces]
+curve = "md3_standard"
+duration_ms = 300
+
+[animation.layers]
+curve = "md3_decel"
+duration_ms = 300

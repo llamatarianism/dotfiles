@@ -1,0 +1,23 @@
+{
+  "name": "Penguins Material",
+  "colors": {
+    "primary": "#6B5D3F",
+    "on_primary": "#C2BBB6",
+    "secondary": "#4A4D3E",
+    "tertiary": "#54454F",
+    "on_tertiary": "#A39C96",
+    "error": "#6E4747",
+    "surface_container": "#A69E99",
+    "outline_variant": "#877F7A",
+    "shadow": "#121111",
+    "hover": "#A89F99",
+    "black": "#6E6662",
+    "blue": "#2E3338",
+    "cyan": "#323D3A",
+    "red": "#523434",
+    "green": "#35382B",
+    "yellow": "#4F442D",
+    "magenta": "#3D313A",
+    "white": "#C4BDB7"
+  }
+}
